@@ -1,0 +1,44 @@
+.memory-search {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.memory-search label {
+    color: #d1d5db;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.memory-search input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background: #1b1f25;
+
+    color: #ffffff;
+
+    border: 1px solid #2d333b;
+    border-radius: 10px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.memory-search input:focus {
+    border-color: #7c5cff;
+
+    box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.15);
+}
+
+.memory-search input::placeholder {
+    color: #6b7280;
+}

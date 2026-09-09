@@ -1,0 +1,35 @@
+.memory-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(290px, 1fr)
+  );
+  gap: 16px;
+}
+
+.memory-list-state {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  padding: 30px;
+  color: #8fa0ba;
+  text-align: center;
+  background: #151f33;
+  border: 1px dashed #31425e;
+  border-radius: 17px;
+}
+
+.memory-list-state span {
+  font-size: 45px;
+}
+
+.memory-list-state h3 {
+  margin: 12px 0 5px;
+  color: #f8fafc;
+}
+
+.memory-list-state p {
+  max-width: 450px;
+  margin: 0;
+  line-height: 1.6;
+}

@@ -1,0 +1,256 @@
+html.alarm-ring-route,
+body.alarm-ring-route,
+#root.alarm-ring-route {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+.alarm-ring-page {
+  position: fixed;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  color: #f8fafc;
+
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(255, 178, 76, 0.2),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(239, 82, 107, 0.2),
+      transparent 42%
+    ),
+    rgba(6, 12, 24, 0.96);
+}
+
+.alarm-ring-glow {
+  position: absolute;
+
+  width: 470px;
+  height: 470px;
+
+  background: radial-gradient(
+    circle,
+    rgba(244, 173, 83, 0.14),
+    transparent 68%
+  );
+
+  border-radius: 50%;
+
+  animation:
+    alarmGlowPulse 1.2s ease-in-out infinite;
+}
+
+.alarm-ring-card {
+  position: relative;
+  z-index: 2;
+
+  width: min(480px, 100%);
+  padding: 34px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(244, 173, 83, 0.17),
+      transparent 43%
+    ),
+    linear-gradient(
+      145deg,
+      #1c2942,
+      #131e32
+    );
+
+  border: 1px solid #455773;
+  border-radius: 28px;
+
+  box-shadow:
+    0 35px 100px rgba(0, 0, 0, 0.55),
+    0 0 55px rgba(241, 107, 125, 0.12);
+
+  animation:
+    alarmCardShake 0.65s ease-in-out infinite;
+}
+
+.alarm-ring-cat {
+  font-size: 78px;
+
+  filter: drop-shadow(
+    0 18px 24px rgba(0, 0, 0, 0.32)
+  );
+}
+
+.alarm-ring-eyebrow {
+  display: block;
+
+  margin-top: 10px;
+
+  color: #ffbd63;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 1.8px;
+}
+
+.alarm-ring-card h1 {
+  margin: 12px 0 6px;
+
+  font-size: clamp(29px, 5vw, 42px);
+  line-height: 1.1;
+}
+
+.alarm-ring-time {
+  margin: 8px 0 13px;
+
+  color: #ffffff;
+
+  font-size: 48px;
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.alarm-ring-card > p {
+  margin: 0;
+
+  color: #aebbd0;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.alarm-ring-warning {
+  padding: 10px 13px;
+  margin: 20px 0;
+
+  color: #ffc7cf;
+
+  background: rgba(126, 38, 53, 0.43);
+
+  border: 1px solid
+    rgba(241, 107, 125, 0.25);
+
+  border-radius: 11px;
+
+  font-size: 11px;
+}
+
+.alarm-ring-snooze {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.alarm-ring-snooze button {
+  padding: 11px 8px;
+
+  color: #d9e4f3;
+
+  background: #243550;
+
+  border: 1px solid #385071;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.alarm-ring-snooze button:hover {
+  transform: translateY(-2px);
+  background: #2e4261;
+}
+
+.alarm-ring-dismiss {
+  width: 100%;
+  padding: 14px;
+  margin-top: 11px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #f4ad53,
+    #f16b7d
+  );
+
+  border: none;
+  border-radius: 11px;
+
+  cursor: pointer;
+
+  font: inherit;
+  font-weight: 900;
+
+  box-shadow:
+    0 14px 30px
+      rgba(241, 107, 125, 0.22);
+}
+
+.alarm-ring-dismiss:hover {
+  filter: brightness(1.08);
+}
+
+@keyframes alarmCardShake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-0.4deg);
+  }
+
+  75% {
+    transform: rotate(0.4deg);
+  }
+}
+
+@keyframes alarmGlowPulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 520px) {
+  .alarm-ring-card {
+    padding: 25px 19px;
+  }
+
+  .alarm-ring-snooze {
+    grid-template-columns: 1fr;
+  }
+}

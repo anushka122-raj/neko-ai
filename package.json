@@ -1,0 +1,35 @@
+{
+  "name": "nekoai-ai-companion",
+  "version": "1.0.0",
+  "description": "NekoAI is a persistent AI companion that stays on screen and actively reminds users about their goals and tasks through emotional interaction.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishikasolanki/NekoAI-AI-Companion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rishikasolanki/NekoAI-AI-Companion/issues"
+  },
+  "homepage": "https://github.com/rishikasolanki/NekoAI-AI-Companion#readme",
+  "devDependencies": {
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.18.1"
+  },
+  "allowScripts": {
+    "electron-winstaller@5.4.0": true
+  }
+}

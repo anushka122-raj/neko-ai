@@ -1,0 +1,483 @@
+.focus-page {
+  display: grid;
+  gap: 22px;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  color: #f8fafc;
+}
+
+.focus-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 215px;
+  padding: 38px 42px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 88% 15%,
+      rgba(40, 189, 242, 0.18),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at 72% 100%,
+      rgba(109, 99, 255, 0.2),
+      transparent 42%
+    ),
+    linear-gradient(145deg, #1b2942, #151f35);
+  border: 1px solid #2c3c56;
+  border-radius: 25px;
+  box-shadow: 0 22px 48px rgba(2, 8, 23, 0.24);
+}
+
+.focus-eyebrow {
+  color: #53d5ff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.focus-hero h1 {
+  margin: 12px 0 14px;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.07;
+  letter-spacing: -1.7px;
+}
+
+.focus-hero p {
+  max-width: 620px;
+  margin: 0;
+  color: #9eacc4;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.focus-hero-mascot {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  width: 180px;
+  height: 160px;
+  flex-shrink: 0;
+  background: rgba(24, 36, 58, 0.55);
+  border: 1px solid rgba(91, 127, 184, 0.28);
+  border-radius: 35px;
+  transform: rotate(3deg);
+}
+
+.focus-hero-mascot span {
+  font-size: 72px;
+  animation: focusMascotFloat 3s ease-in-out infinite;
+}
+
+.focus-hero-mascot small {
+  color: #aab8ce;
+  font-size: 10px;
+}
+
+.focus-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(450px, 1.2fr)
+    minmax(330px, 0.8fr);
+  gap: 18px;
+}
+
+.focus-main-card,
+.focus-presets-card,
+.focus-custom-card {
+  background: rgba(19, 30, 50, 0.84);
+  border: 1px solid #2c3c56;
+  border-radius: 22px;
+}
+
+.focus-main-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 610px;
+  padding: 28px;
+}
+
+.focus-mode-switch {
+  display: flex;
+  gap: 6px;
+  padding: 5px;
+  background: #111c30;
+  border: 1px solid #2d3d58;
+  border-radius: 13px;
+}
+
+.focus-mode-switch button {
+  padding: 9px 18px;
+  color: #899ab4;
+  background: transparent;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.focus-mode-switch .focus-mode-active {
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #6d63ff,
+    #28bdf2
+  );
+  box-shadow: 0 8px 18px rgba(40, 151, 238, 0.2);
+}
+
+.focus-timer-wrapper {
+  display: grid;
+  flex: 1;
+  place-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.focus-progress-ring {
+  display: grid;
+  place-items: center;
+  width: min(330px, 72vw);
+  aspect-ratio: 1;
+  padding: 12px;
+  background: conic-gradient(
+    #28bdf2 0deg,
+    #6d63ff var(--focus-progress),
+    #263750 var(--focus-progress),
+    #263750 360deg
+  );
+  border-radius: 50%;
+  box-shadow:
+    0 0 50px rgba(40, 189, 242, 0.12),
+    0 24px 45px rgba(2, 8, 23, 0.3);
+}
+
+.focus-progress-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(109, 99, 255, 0.11),
+      transparent 55%
+    ),
+    #121e32;
+  border-radius: 50%;
+}
+
+.focus-timer-label {
+  margin-bottom: 10px;
+  color: #74ddff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.focus-progress-inner strong {
+  font-size: clamp(51px, 7vw, 75px);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.focus-progress-inner small {
+  max-width: 215px;
+  margin-top: 13px;
+  color: #8fa0ba;
+  line-height: 1.5;
+}
+
+.focus-controls {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+}
+
+.focus-controls button {
+  min-height: 45px;
+  padding: 0 20px;
+  border-radius: 11px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.focus-primary-button {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #6d63ff,
+    #28bdf2
+  );
+  border: none;
+  box-shadow: 0 12px 24px rgba(40, 151, 238, 0.2);
+}
+
+.focus-secondary-button {
+  color: #111827;
+  background: #f8fafc;
+  border: none;
+}
+
+.focus-reset-button {
+  color: #aebbd0;
+  background: #1b2941;
+  border: 1px solid #31425e;
+}
+
+.focus-complete-message {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 18px;
+  box-sizing: border-box;
+  color: #cbf9e8;
+  background: rgba(36, 115, 87, 0.38);
+  border: 1px solid rgba(69, 215, 165, 0.27);
+  border-radius: 13px;
+}
+
+.focus-complete-message > span {
+  font-size: 25px;
+}
+
+.focus-complete-message div {
+  display: grid;
+  gap: 3px;
+}
+
+.focus-complete-message small {
+  color: #91cdb7;
+}
+
+.focus-side-panel {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+
+.focus-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.focus-stat-grid article {
+  display: grid;
+  gap: 5px;
+  padding: 18px;
+  background: #18243a;
+  border: 1px solid #2c3c56;
+  border-radius: 17px;
+}
+
+.focus-stat-grid span {
+  color: #92a3bc;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.focus-stat-grid strong {
+  font-size: 28px;
+}
+
+.focus-stat-grid small {
+  color: #71839e;
+  font-size: 10px;
+}
+
+.focus-presets-card,
+.focus-custom-card {
+  padding: 21px;
+}
+
+.focus-section-heading > span,
+.focus-custom-card > div:first-child > span {
+  color: #53d5ff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+}
+
+.focus-section-heading h2,
+.focus-custom-card h2 {
+  margin: 5px 0 17px;
+  font-size: 21px;
+}
+
+.focus-preset-list {
+  display: grid;
+  gap: 9px;
+}
+
+.focus-preset-list button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  color: #dfe8f5;
+  text-align: left;
+  background: #142037;
+  border: 1px solid #2b3c57;
+  border-radius: 13px;
+  cursor: pointer;
+  font: inherit;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.focus-preset-list button:hover {
+  transform: translateX(3px);
+  border-color: #4b6e99;
+}
+
+.focus-preset-list .focus-preset-active {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(109, 99, 255, 0.18),
+      rgba(40, 189, 242, 0.1)
+    ),
+    #142037;
+  border-color: #536fa4;
+}
+
+.focus-preset-icon {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  background: #233550;
+  border-radius: 11px;
+  font-size: 18px;
+}
+
+.focus-preset-list button > span:nth-child(2) {
+  display: grid;
+  gap: 3px;
+}
+
+.focus-preset-list strong {
+  font-size: 12px;
+}
+
+.focus-preset-list small {
+  color: #8193ae;
+  font-size: 10px;
+}
+
+.focus-preset-arrow {
+  color: #6f84a4;
+}
+
+.focus-custom-input {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 9px;
+}
+
+.focus-custom-input input {
+  width: 100%;
+  padding: 11px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background: #111c30;
+  border: 1px solid #30415d;
+  border-radius: 10px;
+  outline: none;
+  font: inherit;
+}
+
+.focus-custom-input > span {
+  color: #8799b3;
+  font-size: 12px;
+}
+
+.focus-custom-input button {
+  padding: 11px 14px;
+  color: white;
+  background: #314867;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.focus-notification-button {
+  padding: 13px;
+  color: #b9dcf0;
+  background: rgba(40, 189, 242, 0.07);
+  border: 1px dashed rgba(40, 189, 242, 0.25);
+  border-radius: 13px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@keyframes focusMascotFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@media (max-width: 1050px) {
+  .focus-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .focus-hero {
+    padding: 30px 24px;
+  }
+
+  .focus-hero-mascot {
+    display: none;
+  }
+
+  .focus-main-card {
+    min-height: 540px;
+    padding: 20px;
+  }
+
+  .focus-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-custom-input {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-custom-input button {
+    width: 100%;
+  }
+}

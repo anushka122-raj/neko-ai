@@ -1,0 +1,81 @@
+.memory-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-bottom: 30px;
+}
+
+.memory-form input,
+.memory-form textarea,
+.memory-form select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background: #1b1f25;
+
+    color: #ffffff;
+
+    border: 1px solid #2d333b;
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+.memory-form input:focus,
+.memory-form textarea:focus,
+.memory-form select:focus {
+    border-color: #7c5cff;
+
+    box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.15);
+}
+
+.memory-form textarea {
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+.memory-form button {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #22c55e;
+
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.memory-form button:hover {
+    background: #16a34a;
+
+    transform: translateY(-2px);
+}
+
+.memory-form button:active {
+    transform: scale(0.98);
+}
+
+.memory-form-error {
+    margin: 0;
+    color: #ff8a8a;
+    font-size: 0.9rem;
+}
+
+.memory-form button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}

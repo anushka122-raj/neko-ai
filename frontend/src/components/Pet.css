@@ -1,0 +1,1158 @@
+.desktop-pet {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+  background: transparent;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ── Shared wrapper: bubble + sprite move together ── */
+
+.pet-wrapper {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+
+  width: 220px;
+
+  /* Tall enough for sprite (190px) + bubble above (max ~90px) */
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* relative so absolutely-positioned children (level-card, xp-popup)
+     anchor to this wrapper, not .desktop-pet */
+  pointer-events: none;
+}
+
+/* ── Bubble containers (positioned above sprite) ── */
+
+.pet-bubble-above {
+  position: relative;
+  width: 220px;
+  max-width: calc(100vw - 36px);
+  margin-bottom: 6px;
+
+  pointer-events: auto;
+  -webkit-app-region: no-drag;
+}
+
+/* Simple idle speech bubble sits in same above-sprite slot */
+.pet-bubble-above-simple {
+  position: relative;
+  width: 205px;
+  max-width: calc(100vw - 36px);
+  margin-bottom: 6px;
+
+  pointer-events: none;
+  -webkit-app-region: no-drag;
+}
+
+/* ── Drag area: the actual interactive sprite zone ── */
+
+.pet-drag-area {
+  position: relative;
+
+  width: 190px;
+  height: 190px;
+
+  cursor: grab;
+  pointer-events: auto;
+
+  /* Use no-drag so Electron doesn't intercept pointer events;
+     JS does window dragging via IPC instead. */
+  -webkit-app-region: no-drag;
+
+  touch-action: none;
+}
+
+.pet-drag-area:active {
+  cursor: grabbing;
+}
+
+.pet-face-button {
+  position: absolute;
+  right: 59px;
+  bottom: 54px;
+  z-index: 25;
+
+  width: 100px;
+  height: 90px;
+
+  padding: 0;
+
+  cursor: pointer;
+  pointer-events: auto;
+
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+
+  -webkit-app-region: no-drag;
+}
+
+.pet-face-button:focus-visible {
+  outline: 2px solid #45d7a5;
+  outline-offset: 3px;
+}
+
+/* ── Speech bubble (shared style for both simple + rich) ── */
+
+.pet-speech-bubble {
+  position: relative;
+  z-index: 30;
+
+  padding: 11px 14px;
+
+  box-sizing: border-box;
+
+  color: #f8fafc;
+  background: rgba(17, 28, 48, 0.96);
+
+  border: 1px solid
+    rgba(72, 143, 218, 0.55);
+
+  border-radius: 14px 14px 14px 4px;
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.3);
+
+  font-size: 12px;
+  line-height: 1.45;
+
+  pointer-events: none;
+  -webkit-app-region: no-drag;
+}
+
+.pet-speech-bubble p {
+  margin: 0;
+}
+
+/* Bubble tail — points downward toward the pet */
+.pet-speech-bubble > span {
+  position: absolute;
+  right: 22px;
+  bottom: -7px;
+
+  width: 14px;
+  height: 14px;
+
+  background: rgba(17, 28, 48, 0.96);
+
+  border-right: 1px solid
+    rgba(72, 143, 218, 0.55);
+
+  border-bottom: 1px solid
+    rgba(72, 143, 218, 0.55);
+
+  transform: rotate(45deg);
+}
+
+/* ── Rich reminder bubble styles ── */
+
+.pet-speech-bubble-rich {
+  pointer-events: auto;
+}
+
+/* ── Level card ── */
+
+.pet-level-card {
+  position: absolute;
+  /* Centre above the sprite inside the 220px wrapper */
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 192px;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 5px 8px;
+
+  color: #ddecff;
+  background: rgba(17, 28, 48, 0.92);
+
+  border: 1px solid
+    rgba(73, 105, 154, 0.5);
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  pointer-events: none;
+  -webkit-app-region: no-drag;
+}
+
+.pet-xp-track {
+  width: 50px;
+  height: 4px;
+
+  overflow: hidden;
+
+  background: #2b3b55;
+  border-radius: 999px;
+}
+
+.pet-xp-fill {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #7468ff,
+    #2fc4f5
+  );
+
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.pet-xp-popup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 210px;
+  z-index: 30;
+
+  color: #8cf6ce;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  text-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.5);
+
+  animation: xpRise 1s ease forwards;
+
+  pointer-events: none;
+}
+
+/* ── Sprite ── */
+
+.pet-sprite {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: 155px;
+  height: 160px;
+
+  transform:
+    translateX(-50%)
+    scaleX(var(--pet-direction));
+
+  transform-origin: center;
+
+  pointer-events: none;
+}
+
+/* ---------- torso + ears ---------- */
+
+.pet-body {
+  position: absolute;
+  left: 50%;
+  bottom: 21px;
+  z-index: 4;
+
+  display: block;
+
+  width: 115px;
+  height: 115px;
+
+  background:
+    radial-gradient(
+      circle at 35% 25%,
+      rgba(255, 255, 255, 0.48),
+      transparent 16%
+    ),
+    linear-gradient(
+      145deg,
+      #ffc961,
+      #fa8878
+    );
+
+  border: 5px solid #ffe5ba;
+  border-radius: 48% 48% 45% 45%;
+
+  box-shadow:
+    inset 0 -14px 17px
+      rgba(145, 55, 55, 0.16),
+    0 15px 24px
+      rgba(0, 0, 0, 0.28);
+
+  transform: translateX(-50%);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.3s ease;
+}
+
+.pet-body::before,
+.pet-body::after {
+  position: absolute;
+  top: -27px;
+  z-index: -1;
+
+  width: 43px;
+  height: 53px;
+
+  content: "";
+
+  background: linear-gradient(
+    145deg,
+    #ffc961,
+    #fa8878
+  );
+
+  border: 5px solid #ffe5ba;
+}
+
+.pet-body::before {
+  left: 3px;
+  border-radius:
+    10px 80% 10px 80%;
+  transform: rotate(-24deg);
+}
+
+.pet-body::after {
+  right: 3px;
+  border-radius:
+    80% 10px 80% 10px;
+  transform: rotate(24deg);
+}
+
+/* ---------- face ---------- */
+
+.pet-eye {
+  position: absolute;
+  top: 40px;
+
+  width: 15px;
+  height: 15px;
+
+  background: #24303f;
+  border-radius: 50%;
+
+  animation: petBlink 4.5s ease-in-out infinite;
+}
+
+.pet-eye::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 5px;
+  height: 5px;
+
+  content: "";
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.pet-eye-left {
+  left: 30px;
+}
+
+.pet-eye-right {
+  right: 30px;
+}
+
+.pet-mouth {
+  position: absolute;
+  top: 62px;
+  left: 50%;
+
+  width: 18px;
+  height: 9px;
+
+  border-bottom: 3px solid #8a4234;
+  border-radius: 0 0 14px 14px;
+
+  transform: translateX(-50%);
+}
+
+.pet-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  z-index: 1;
+
+  width: 105px;
+  height: 18px;
+
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+
+  filter: blur(5px);
+  transform: translateX(-50%);
+
+  transition:
+    width 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.pet-effect {
+  position: absolute;
+  top: -31px;
+  right: -14px;
+
+  color: #cfe1ff;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* ---------- tail ---------- */
+
+.pet-tail {
+  position: absolute;
+  left: 22px;
+  bottom: 44px;
+  z-index: 2;
+
+  width: 13px;
+  height: 52px;
+
+  background: linear-gradient(
+    180deg,
+    #ffc961,
+    #fa8878
+  );
+
+  border: 4px solid #ffe5ba;
+  border-radius: 50% 50% 12px 12px;
+
+  transform-origin: bottom center;
+  transform: rotate(14deg);
+
+  transition: transform 0.25s ease;
+}
+
+/* ---------- legs ---------- */
+
+.pet-leg {
+  position: absolute;
+  bottom: 10px;
+
+  width: 14px;
+  height: 25px;
+
+  background: linear-gradient(
+    180deg,
+    #fa8878,
+    #dd6a5a
+  );
+
+  border-radius: 7px;
+
+  transform-origin: top center;
+
+  transition:
+    height 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.pet-leg-back-l {
+  left: 35px;
+  z-index: 3;
+}
+
+.pet-leg-back-r {
+  left: 55px;
+  z-index: 3;
+}
+
+.pet-leg-front-l {
+  left: 95px;
+  z-index: 5;
+}
+
+.pet-leg-front-r {
+  left: 115px;
+  z-index: 5;
+}
+
+/* ---------- locomotion states ---------- */
+
+.pet-state-idle .pet-body {
+  animation: nekoIdle 2.4s ease-in-out infinite;
+}
+
+.pet-state-idle .pet-tail {
+  animation: tailSwishSlow 3.2s ease-in-out infinite;
+}
+
+.pet-state-walk .pet-body {
+  animation: nekoWalk 0.42s ease-in-out infinite;
+}
+
+.pet-state-walk .pet-shadow {
+  animation: shadowWalk 0.42s ease-in-out infinite;
+}
+
+.pet-state-walk .pet-tail {
+  animation: tailSwish 0.42s ease-in-out infinite;
+}
+
+.pet-state-walk .pet-leg-back-l,
+.pet-state-walk .pet-leg-front-r {
+  animation: legStepA 0.42s ease-in-out infinite;
+}
+
+.pet-state-walk .pet-leg-back-r,
+.pet-state-walk .pet-leg-front-l {
+  animation: legStepB 0.42s ease-in-out infinite;
+}
+
+.pet-state-run .pet-body {
+  animation: nekoRun 0.22s ease-in-out infinite;
+}
+
+.pet-state-run .pet-shadow {
+  animation: shadowWalk 0.22s ease-in-out infinite;
+}
+
+.pet-state-run .pet-tail {
+  animation: tailSwish 0.2s ease-in-out infinite;
+}
+
+.pet-state-run .pet-leg-back-l,
+.pet-state-run .pet-leg-front-r {
+  animation: legRunA 0.2s ease-in-out infinite;
+}
+
+.pet-state-run .pet-leg-back-r,
+.pet-state-run .pet-leg-front-l {
+  animation: legRunB 0.2s ease-in-out infinite;
+}
+
+.pet-state-sit .pet-body {
+  transform:
+    translateX(-50%)
+    translateY(13px)
+    scaleY(0.87);
+}
+
+.pet-state-sit .pet-leg-back-l,
+.pet-state-sit .pet-leg-back-r {
+  height: 9px;
+  opacity: 0.5;
+}
+
+.pet-state-sit .pet-leg-front-l,
+.pet-state-sit .pet-leg-front-r {
+  height: 29px;
+}
+
+.pet-state-sit .pet-tail {
+  transform: rotate(48deg);
+}
+
+.pet-state-sleep .pet-body {
+  animation: nekoSleep 2.2s ease-in-out infinite;
+
+  transform:
+    translateX(-50%)
+    translateY(20px)
+    rotate(-8deg)
+    scaleY(0.8);
+}
+
+.pet-state-sleep .pet-leg {
+  opacity: 0;
+}
+
+.pet-state-sleep .pet-tail {
+  opacity: 0.55;
+  transform: rotate(72deg);
+}
+
+.pet-state-sleep .pet-shadow {
+  width: 128px;
+  opacity: 0.35;
+}
+
+.pet-state-sleep .pet-eye {
+  top: 45px;
+
+  height: 3px;
+
+  border-radius: 3px;
+
+  animation: none;
+}
+
+.pet-state-sleep .pet-eye::after {
+  display: none;
+}
+
+/* ---------- dragging pose ---------- */
+
+.pet-dragging .pet-body {
+  transform:
+    translateX(-50%)
+    scale(1.06);
+}
+
+.pet-dragging .pet-tail,
+.pet-dragging .pet-leg {
+  animation: none;
+}
+
+.pet-dragging .pet-shadow {
+  opacity: 0.12;
+  transform:
+    translateX(-50%)
+    scale(0.65);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   EMOTION OVERLAYS
+   All effects applied to the sprite only — never touch app-
+   wide or dashboard styles.
+═══════════════════════════════════════════════════════════ */
+
+/* happy — squinting eyes (^‿^) */
+.pet-emotion-happy .pet-eye,
+.pet-emotion-celebrate .pet-eye,
+.pet-emotion-excited .pet-eye {
+  top: 45px;
+
+  height: 4px;
+
+  border-radius: 4px;
+}
+
+.pet-emotion-happy .pet-eye::after,
+.pet-emotion-celebrate .pet-eye::after,
+.pet-emotion-excited .pet-eye::after {
+  display: none;
+}
+
+/* celebrate — gold glow */
+.pet-emotion-celebrate .pet-body {
+  box-shadow:
+    inset 0 -14px 17px rgba(145, 55, 55, 0.16),
+    0 15px 24px rgba(0, 0, 0, 0.28),
+    0 0 18px 6px rgba(255, 220, 60, 0.55);
+}
+
+/* sad — desaturate + frown */
+.pet-emotion-sad .pet-body {
+  filter: saturate(0.65) brightness(0.9);
+}
+
+.pet-emotion-sad .pet-mouth {
+  top: 66px;
+
+  border-top: 3px solid #6f7d92;
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
+}
+
+/* angry — shake + red eyes */
+.pet-emotion-angry .pet-body {
+  animation: nekoAngry 0.15s linear infinite;
+  box-shadow:
+    inset 0 -14px 17px rgba(145, 55, 55, 0.16),
+    0 15px 24px rgba(0, 0, 0, 0.28),
+    0 0 16px 5px rgba(220, 40, 40, 0.55);
+}
+
+.pet-emotion-angry .pet-eye {
+  background: #7a1f1f;
+}
+
+.pet-emotion-angry .pet-mouth {
+  width: 22px;
+
+  border-bottom-color: #7a1f1f;
+}
+
+/* concerned — orange-amber glow */
+.pet-emotion-concerned .pet-body {
+  box-shadow:
+    inset 0 -14px 17px rgba(145, 55, 55, 0.16),
+    0 15px 24px rgba(0, 0, 0, 0.28),
+    0 0 16px 5px rgba(255, 145, 30, 0.5);
+}
+
+.pet-emotion-concerned .pet-eye {
+  background: #7a4f00;
+}
+
+.pet-emotion-concerned .pet-mouth {
+  top: 66px;
+  border-top: 3px solid #8a5a00;
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
+}
+
+/* urgent — red glow + shake (same as angry but slightly softer) */
+.pet-emotion-urgent .pet-body {
+  animation: nekoAngry 0.2s linear infinite;
+  box-shadow:
+    inset 0 -14px 17px rgba(145, 55, 55, 0.16),
+    0 15px 24px rgba(0, 0, 0, 0.28),
+    0 0 20px 8px rgba(255, 60, 30, 0.65);
+}
+
+.pet-emotion-urgent .pet-eye {
+  background: #8a0000;
+}
+
+/* thinking — raised eyebrow (eye offset), pursed mouth */
+.pet-emotion-thinking .pet-eye {
+  top: 42px;
+}
+
+.pet-emotion-thinking .pet-mouth {
+  width: 10px;
+
+  border-radius: 6px;
+  transform: translateX(-50%) rotate(-6deg);
+}
+
+/* sleepy — half-closed eyes */
+.pet-emotion-sleepy .pet-eye,
+.pet-emotion-sleep .pet-eye {
+  top: 45px;
+
+  height: 3px;
+
+  border-radius: 3px;
+
+  animation: none;
+}
+
+.pet-emotion-sleepy .pet-eye::after,
+.pet-emotion-sleep .pet-eye::after {
+  display: none;
+}
+
+.pet-emotion-sleepy .pet-body {
+  filter: saturate(0.8) brightness(0.92);
+}
+
+/* surprised */
+.pet-emotion-surprised .pet-eye {
+  top: 34px;
+
+  width: 20px;
+  height: 20px;
+}
+
+.pet-emotion-surprised .pet-mouth {
+  top: 64px;
+
+  width: 11px;
+  height: 11px;
+
+  border: 3px solid #8a4234;
+  border-radius: 50%;
+}
+
+/* neutral / idle — no overrides needed (base style) */
+
+/* ═══════════════════════════════════════════════════════════
+   LIFECYCLE PHASE CLASSES
+   Applied to .pet-wrapper so the whole pet+bubble unit can
+   animate as one.
+═══════════════════════════════════════════════════════════ */
+
+/* hidden — off-screen or not yet shown */
+.pet-lifecycle-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(60px);
+}
+
+/* entering — slide up */
+.pet-lifecycle-entering {
+  animation: petSlideIn 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* talking — fully visible, subtle bounce */
+.pet-lifecycle-talking {
+  animation: petTalkPulse 1.8s ease-in-out infinite;
+}
+
+/* waiting — static, bubble with actions visible */
+.pet-lifecycle-waiting {
+  /* nothing extra; pet sits still */
+}
+
+/* reacting — quick happy bounce */
+.pet-lifecycle-reacting {
+  animation: petReact 0.4s ease-in-out;
+}
+
+/* leaving — slide down */
+.pet-lifecycle-leaving {
+  animation: petSlideOut 0.55s ease-in forwards;
+}
+
+/* idle — normal walking state, fully visible */
+.pet-lifecycle-idle {
+  /* nothing: sprite runs its own locomotion animations */
+}
+
+/* ---------- talking (mouth animation) ---------- */
+
+.pet-talking .pet-mouth {
+  animation: mouthTalk 0.32s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   REMINDER BUBBLE ACTION BUTTONS
+═══════════════════════════════════════════════════════════ */
+
+.pet-bubble-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 9px;
+
+  pointer-events: auto;
+
+  -webkit-app-region: no-drag;
+}
+
+.pet-bubble-action {
+  padding: 6px 11px;
+
+  cursor: pointer;
+
+  color: #eaf3ff;
+  background: rgba(69, 215, 165, 0.16);
+
+  border: 1px solid
+    rgba(69, 215, 165, 0.55);
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  -webkit-app-region: no-drag;
+}
+
+.pet-bubble-action:hover {
+  background: rgba(69, 215, 165, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   KEYFRAMES
+═══════════════════════════════════════════════════════════ */
+
+@keyframes nekoWalk {
+  0%,
+  100% {
+    transform:
+      translateX(-50%)
+      translateY(0)
+      rotate(-2deg);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      translateY(-9px)
+      rotate(2deg);
+  }
+}
+
+@keyframes nekoRun {
+  0%,
+  100% {
+    transform:
+      translateX(-50%)
+      translateY(-2px)
+      rotate(-4deg);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      translateY(-14px)
+      rotate(4deg);
+  }
+}
+
+@keyframes shadowWalk {
+  0%,
+  100% {
+    width: 105px;
+    opacity: 0.8;
+  }
+
+  50% {
+    width: 88px;
+    opacity: 0.48;
+  }
+}
+
+@keyframes nekoIdle {
+  0%,
+  100% {
+    transform:
+      translateX(-50%)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      scale(1.025);
+  }
+}
+
+@keyframes nekoAngry {
+  from {
+    transform:
+      translateX(calc(-50% - 2px));
+  }
+
+  to {
+    transform:
+      translateX(calc(-50% + 2px));
+  }
+}
+
+@keyframes nekoSleep {
+  0%,
+  100% {
+    transform:
+      translateX(-50%)
+      translateY(20px)
+      rotate(-8deg)
+      scaleY(0.8);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      translateY(20px)
+      rotate(-8deg)
+      scaleY(0.83);
+  }
+}
+
+@keyframes tailSwish {
+  0%,
+  100% {
+    transform: rotate(6deg);
+  }
+
+  50% {
+    transform: rotate(26deg);
+  }
+}
+
+@keyframes tailSwishSlow {
+  0%,
+  100% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes legStepA {
+  0%,
+  100% {
+    transform:
+      rotate(-18deg)
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      rotate(18deg)
+      translateY(-3px);
+  }
+}
+
+@keyframes legStepB {
+  0%,
+  100% {
+    transform:
+      rotate(18deg)
+      translateY(-3px);
+  }
+
+  50% {
+    transform:
+      rotate(-18deg)
+      translateY(0);
+  }
+}
+
+@keyframes legRunA {
+  0%,
+  100% {
+    transform:
+      rotate(-28deg)
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      rotate(28deg)
+      translateY(-5px);
+  }
+}
+
+@keyframes legRunB {
+  0%,
+  100% {
+    transform:
+      rotate(28deg)
+      translateY(-5px);
+  }
+
+  50% {
+    transform:
+      rotate(-28deg)
+      translateY(0);
+  }
+}
+
+@keyframes petBlink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  96% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes mouthTalk {
+  0%,
+  100% {
+    height: 5px;
+  }
+
+  50% {
+    height: 11px;
+  }
+}
+
+@keyframes xpRise {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+}
+
+/* Lifecycle phase keyframes */
+
+@keyframes petSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes petSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+@keyframes petTalkPulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes petReact {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  40% {
+    transform: translateY(-8px) scale(1.06);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PREFERS-REDUCED-MOTION
+   Turn all pet animations into simple opacity fades.
+═══════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .pet-state-idle .pet-body,
+  .pet-state-walk .pet-body,
+  .pet-state-walk .pet-shadow,
+  .pet-state-walk .pet-tail,
+  .pet-state-walk .pet-leg-back-l,
+  .pet-state-walk .pet-leg-back-r,
+  .pet-state-walk .pet-leg-front-l,
+  .pet-state-walk .pet-leg-front-r,
+  .pet-state-run .pet-body,
+  .pet-state-run .pet-shadow,
+  .pet-state-run .pet-tail,
+  .pet-state-run .pet-leg-back-l,
+  .pet-state-run .pet-leg-back-r,
+  .pet-state-run .pet-leg-front-l,
+  .pet-state-run .pet-leg-front-r,
+  .pet-state-sleep .pet-body,
+  .pet-talking .pet-mouth,
+  .pet-emotion-angry .pet-body,
+  .pet-emotion-urgent .pet-body,
+  .pet-eye,
+  .pet-tail {
+    animation: none !important;
+  }
+
+  .pet-lifecycle-entering,
+  .pet-lifecycle-leaving,
+  .pet-lifecycle-talking,
+  .pet-lifecycle-reacting {
+    animation: none !important;
+    opacity: 1;
+  }
+
+  .pet-lifecycle-hidden {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,766 @@
+.habits-page {
+  display: grid;
+  gap: 22px;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  color: #f8fafc;
+}
+
+.habits-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 225px;
+  padding: 39px 43px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 88% 15%,
+      rgba(69, 215, 165, 0.2),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at 72% 100%,
+      rgba(40, 189, 242, 0.13),
+      transparent 43%
+    ),
+    linear-gradient(
+      145deg,
+      #1b2942,
+      #151f35
+    );
+  border: 1px solid #2c3c56;
+  border-radius: 25px;
+  box-shadow: 0 22px 48px
+    rgba(2, 8, 23, 0.24);
+}
+
+.habits-eyebrow {
+  color: #67e5ba;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.habits-hero h1 {
+  margin: 12px 0 14px;
+  font-size: clamp(
+    36px,
+    4vw,
+    54px
+  );
+  line-height: 1.07;
+  letter-spacing: -1.7px;
+}
+
+.habits-hero p {
+  max-width: 620px;
+  margin: 0;
+  color: #9eacc4;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.habits-hero-pet {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  width: 180px;
+  height: 160px;
+  flex-shrink: 0;
+  background: rgba(
+    24,
+    36,
+    58,
+    0.56
+  );
+  border: 1px solid
+    rgba(69, 215, 165, 0.25);
+  border-radius: 35px;
+  transform: rotate(3deg);
+}
+
+.habits-hero-pet span {
+  font-size: 72px;
+  animation: habitPetFloat
+    3s ease-in-out infinite;
+}
+
+.habits-hero-pet small {
+  color: #aab8ce;
+  font-size: 10px;
+}
+
+.habit-stats-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+  gap: 14px;
+}
+
+.habit-stats-grid article {
+  display: grid;
+  gap: 5px;
+  padding: 19px 20px;
+  background: #18243a;
+  border: 1px solid #2c3c56;
+  border-radius: 17px;
+}
+
+.habit-stats-grid span {
+  color: #92a3bc;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.habit-stats-grid strong {
+  font-size: 27px;
+}
+
+.habit-stats-grid small {
+  color: #71839e;
+  font-size: 10px;
+}
+
+.habit-day-progress {
+  display: grid;
+  grid-template-columns:
+    minmax(190px, auto)
+    minmax(200px, 1fr)
+    auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 21px;
+  background: rgba(
+    19,
+    30,
+    50,
+    0.78
+  );
+  border: 1px solid #2c3c56;
+  border-radius: 17px;
+}
+
+.habit-day-progress > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.habit-day-progress
+  > div:first-child
+  span {
+  color: #67e5ba;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+.habit-day-progress
+  > div:first-child
+  strong {
+  font-size: 13px;
+}
+
+.habit-progress-track,
+.habit-card-track {
+  overflow: hidden;
+  background: #293a53;
+  border-radius: 999px;
+}
+
+.habit-progress-track {
+  height: 8px;
+}
+
+.habit-progress-fill,
+.habit-card-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #45d7a5,
+    #28bdf2
+  );
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.habit-progress-value {
+  color: #d8f8ec;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.habits-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(350px, 0.8fr)
+    minmax(500px, 1.2fr);
+  gap: 18px;
+}
+
+.habit-form-card,
+.habit-list-card {
+  padding: 24px;
+  background: rgba(
+    19,
+    30,
+    50,
+    0.84
+  );
+  border: 1px solid #2c3c56;
+  border-radius: 22px;
+}
+
+.habit-section-heading > span {
+  color: #67e5ba;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+}
+
+.habit-section-heading h2 {
+  margin: 5px 0 19px;
+  font-size: 23px;
+}
+
+.habit-form {
+  display: grid;
+  gap: 15px;
+}
+
+.habit-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.habit-form label > span,
+.habit-day-picker > span {
+  color: #b7c3d5;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.habit-form input,
+.habit-form textarea,
+.habit-form select {
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  color: #f8fafc;
+  background: #111c30;
+  border: 1px solid #30415d;
+  border-radius: 10px;
+  outline: none;
+  font: inherit;
+}
+
+.habit-form textarea {
+  resize: vertical;
+}
+
+.habit-form input:focus,
+.habit-form textarea:focus,
+.habit-form select:focus {
+  border-color: #45d7a5;
+  box-shadow: 0 0 0 3px
+    rgba(69, 215, 165, 0.1);
+}
+
+.habit-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.habit-day-picker {
+  display: grid;
+  gap: 9px;
+}
+
+.habit-day-picker > div {
+  display: grid;
+  grid-template-columns:
+    repeat(7, 1fr);
+  gap: 6px;
+}
+
+.habit-day-picker button {
+  min-height: 37px;
+  padding: 4px;
+  color: #8fa0ba;
+  background: #17243a;
+  border: 1px solid #2d3e59;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.habit-day-picker
+  .habit-day-selected {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #45d7a5,
+    #28bdf2
+  );
+  border-color: transparent;
+}
+
+.habit-reward-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 13px;
+  color: #b7c3d5;
+  background: rgba(
+    69,
+    215,
+    165,
+    0.07
+  );
+  border: 1px solid
+    rgba(69, 215, 165, 0.2);
+  border-radius: 11px;
+  font-size: 11px;
+}
+
+.habit-reward-preview strong {
+  color: #bdf8e4;
+}
+
+.habit-active-check {
+  display: flex !important;
+  align-items: center;
+  gap: 9px;
+}
+
+.habit-active-check input {
+  width: auto;
+}
+
+.habit-error,
+.habit-success {
+  padding: 11px 13px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.habit-error {
+  color: #ffd2d8;
+  background: rgba(
+    116,
+    38,
+    51,
+    0.7
+  );
+  border: 1px solid
+    rgba(241, 107, 125, 0.3);
+}
+
+.habit-success {
+  color: #c7f7e5;
+  background: rgba(
+    30,
+    94,
+    73,
+    0.65
+  );
+  border: 1px solid
+    rgba(69, 215, 165, 0.27);
+}
+
+.habit-form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.habit-save-button,
+.habit-cancel-button {
+  min-height: 45px;
+  padding: 0 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.habit-save-button {
+  flex: 1;
+  color: #081711;
+  background: linear-gradient(
+    135deg,
+    #45d7a5,
+    #28bdf2
+  );
+  border: none;
+}
+
+.habit-cancel-button {
+  color: #b7c3d5;
+  background: #23334c;
+  border: 1px solid #354a69;
+}
+
+.habit-list-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.habit-refresh-button {
+  padding: 8px 11px;
+  color: #b7c8dc;
+  background: #21324b;
+  border: 1px solid #354966;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.habit-filters {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.habit-filters button {
+  padding: 8px 12px;
+  color: #899ab4;
+  background: #152139;
+  border: 1px solid #293b57;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.habit-filters
+  .habit-filter-active {
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #45d7a5,
+    #28bdf2
+  );
+  border-color: transparent;
+}
+
+.habit-list {
+  display: grid;
+  gap: 12px;
+}
+
+.habit-card {
+  padding: 16px;
+  background: linear-gradient(
+    145deg,
+    #1c2a43,
+    #17243a
+  );
+  border: 1px solid #2d3e59;
+  border-radius: 16px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-2px);
+  border-color: #496989;
+}
+
+.habit-card-complete {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(
+        69,
+        215,
+        165,
+        0.09
+      ),
+      transparent
+    ),
+    #17243a;
+  border-color: rgba(
+    69,
+    215,
+    165,
+    0.38
+  );
+}
+
+.habit-card-inactive {
+  opacity: 0.55;
+}
+
+.habit-card-top {
+  display: grid;
+  grid-template-columns:
+    auto
+    minmax(0, 1fr)
+    auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.habit-category-icon {
+  display: grid;
+  place-items: center;
+  width: 41px;
+  height: 41px;
+  background: #243650;
+  border-radius: 12px;
+  font-size: 19px;
+}
+
+.habit-card-title {
+  min-width: 0;
+}
+
+.habit-card-title h3 {
+  margin: 0;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.habit-card-title span {
+  color: #8394ad;
+  font-size: 10px;
+}
+
+.habit-difficulty {
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.habit-difficulty-easy {
+  color: #aaf4d7;
+  background: rgba(
+    69,
+    215,
+    165,
+    0.12
+  );
+}
+
+.habit-difficulty-medium {
+  color: #ffda9c;
+  background: rgba(
+    244,
+    173,
+    83,
+    0.12
+  );
+}
+
+.habit-difficulty-hard {
+  color: #ffc0c8;
+  background: rgba(
+    241,
+    107,
+    125,
+    0.12
+  );
+}
+
+.habit-description {
+  margin: 13px 0 0;
+  color: #93a2ba;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.habit-card-progress {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.habit-card-progress > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  color: #8fa0b8;
+  font-size: 10px;
+}
+
+.habit-card-progress strong {
+  color: #dfe8f5;
+}
+
+.habit-card-track {
+  height: 6px;
+}
+
+.habit-card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.habit-card-stats span {
+  padding: 5px 8px;
+  color: #9fafc6;
+  background: #213149;
+  border-radius: 999px;
+  font-size: 9px;
+}
+
+.habit-card-actions {
+  display: grid;
+  grid-template-columns:
+    minmax(130px, 1fr)
+    auto
+    auto
+    auto;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.habit-card-actions button {
+  min-height: 37px;
+  border-radius: 9px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.habit-complete-button {
+  color: #071812;
+  background: linear-gradient(
+    135deg,
+    #45d7a5,
+    #28bdf2
+  );
+  border: none;
+}
+
+.habit-undo-button {
+  color: #d7e2f1;
+  background: #2a3c57;
+  border: 1px solid #3b516f;
+}
+
+.habit-edit-button,
+.habit-pause-button {
+  color: #ced9e8;
+  background: #23344e;
+  border: 1px solid #344b6a;
+}
+
+.habit-delete-button {
+  color: #ffb8c1;
+  background: rgba(
+    241,
+    107,
+    125,
+    0.1
+  );
+  border: 1px solid
+    rgba(241, 107, 125, 0.2);
+}
+
+.habit-card-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.habit-empty-state {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  padding: 30px;
+  color: #8697b1;
+  text-align: center;
+  background: #151f33;
+  border: 1px dashed #31425e;
+  border-radius: 16px;
+}
+
+.habit-empty-state span {
+  font-size: 48px;
+}
+
+.habit-empty-state h3 {
+  margin: 11px 0 5px;
+  color: #f8fafc;
+}
+
+.habit-empty-state p {
+  max-width: 300px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@keyframes habitPetFloat {
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(-2deg);
+  }
+
+  50% {
+    transform:
+      translateY(-8px)
+      rotate(2deg);
+  }
+}
+
+@media (max-width: 1120px) {
+  .habit-stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .habits-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .habits-hero {
+    padding: 29px 23px;
+  }
+
+  .habits-hero-pet {
+    display: none;
+  }
+
+  .habit-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .habit-day-progress {
+    grid-template-columns: 1fr;
+  }
+
+  .habit-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .habit-day-picker > div {
+    grid-template-columns:
+      repeat(4, 1fr);
+  }
+
+  .habit-card-actions {
+    grid-template-columns:
+      1fr
+      repeat(3, auto);
+  }
+}

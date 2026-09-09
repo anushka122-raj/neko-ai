@@ -1,0 +1,34 @@
+.weather-card {
+    text-align: center;
+}
+
+.weather-card h1 {
+    margin: 12px 0;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.weather-card p {
+    margin-top: 6px;
+
+    color: #cfd8dc;
+
+    font-size: 1rem;
+}
+
+.weather-card small {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #8f9aa7;
+
+    font-size: 0.9rem;
+}
+
+.weather-card:hover {
+    transform: translateY(-4px);
+}

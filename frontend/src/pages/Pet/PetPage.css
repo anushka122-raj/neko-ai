@@ -1,0 +1,42 @@
+html,
+body,
+#root {
+  background: transparent !important;
+  overflow: hidden;
+}
+
+.pet-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  -webkit-app-region: drag; /* allows dragging */
+}
+
+.pet {
+  font-size: 90px;
+  transition: all 0.2s ease-out;
+  pointer-events: none; /* ensures clicks don’t block dragging */
+}
+
+/* Blink effect */
+@keyframes blink {
+  0%, 90%, 100% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.3;
+  }
+}
+
+/* Floating idle effect */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

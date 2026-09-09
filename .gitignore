@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Python virtual environments
+.venv/
+**/.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Local database
+backend/nekoai.db
+
+# Raw/local datasets
+dataset/raw/
+
+# Generated ML model/evaluation files
+ml_model/models/*.pkl
+ml_model/evaluation/*.csv
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc

@@ -1,0 +1,39 @@
+.message{
+
+    display:flex;
+
+    margin:12px;
+
+}
+
+.message.user{
+
+    justify-content:flex-end;
+
+}
+
+.message.neko{
+
+    justify-content:flex-start;
+
+}
+
+.bubble{
+
+    max-width:70%;
+
+    padding:14px;
+
+    border-radius:18px;
+
+    background:#333;
+
+    color:white;
+
+}
+
+.user .bubble{
+
+    background:#00C853;
+
+}

@@ -1,0 +1,135 @@
+.memory-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+  padding: 19px;
+  background: linear-gradient(
+    145deg,
+    #1d2b43,
+    #18243a
+  );
+  border: 1px solid #2d3e59;
+  border-radius: 17px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.memory-card:hover {
+  transform: translateY(-4px);
+  border-color: #48678e;
+  box-shadow: 0 16px 30px rgba(2, 8, 23, 0.22);
+}
+
+.memory-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 17px;
+}
+
+.memory-card-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.memory-category-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.memory-category-general {
+  color: #c9dcff;
+  background: rgba(79, 113, 168, 0.23);
+}
+
+.memory-category-goal {
+  color: #ffd89a;
+  background: rgba(244, 173, 83, 0.19);
+}
+
+.memory-category-study {
+  color: #bdeeff;
+  background: rgba(40, 189, 242, 0.16);
+}
+
+.memory-category-project {
+  color: #d5cfff;
+  background: rgba(109, 99, 255, 0.18);
+}
+
+.memory-category-work {
+  color: #c7f7e5;
+  background: rgba(69, 215, 165, 0.17);
+}
+
+.memory-category-personal {
+  color: #ffd1e5;
+  background: rgba(236, 72, 153, 0.16);
+}
+
+.memory-card-content {
+  flex: 1;
+}
+
+.memory-card h3 {
+  margin: 0 0 11px;
+  color: #f8fafc;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.memory-card-content p {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: #aab8ce;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.memory-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 17px;
+  margin-top: 18px;
+  border-top: 1px solid #2c3b54;
+}
+
+.memory-card-footer > span {
+  color: #71839e;
+  font-size: 11px;
+}
+
+.memory-card-footer button {
+  padding: 8px 11px;
+  color: #ffbec7;
+  background: rgba(241, 107, 125, 0.1);
+  border: 1px solid rgba(241, 107, 125, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.memory-card-footer button:hover {
+  color: white;
+  background: #bb4456;
+}
+
+.memory-card-footer button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
