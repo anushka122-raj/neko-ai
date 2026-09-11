@@ -9,7 +9,7 @@ Instead of being just a chatbot, Neko AI is designed as a **personal AI companio
 --------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
-**## ✨ Why Neko AI?**
+** ✨ Why Neko AI?**
 
 Most AI assistants focus primarily on answering questions.
 
@@ -32,7 +32,7 @@ The project explores how AI can move from a simple **question → answer** syste
 -------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
-**# 🚀 Features**
+**🚀 Features**
 
 ### **💬 AI Companion**
 
@@ -47,7 +47,7 @@ Interact with Neko AI through a conversational interface designed for natural an
 * Companion-style interaction
 ---------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-### 🏗️ System Architecture
+** 🏗️ System Architecture**
 
 Neko AI follows a modular architecture separating the user interface, backend services, machine-learning components, and platform-specific applications.
 
@@ -82,7 +82,7 @@ flowchart TD
 ```
 ---------------------------------------
 --------------------------------------------------------------------------------------------------
-**### 😊 Mood & Emotion Tracking**
+**😊 Mood & Emotion Tracking**
 
 Neko AI allows users to record and track their emotional state.
 
@@ -98,7 +98,7 @@ This creates a foundation for understanding how a user's mood changes over time.
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
-**### 📔 AI Journal**
+** 📔 AI Journal**
 
 The journal system allows users to record their daily thoughts and experiences.
 
@@ -113,7 +113,7 @@ The long-term goal is to use these entries to provide meaningful personalized in
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-**### 📊 Productivity Intelligence**
+**📊 Productivity Intelligence**
 
 Neko AI includes a machine-learning component designed to analyze productivity-related patterns.
 
@@ -124,8 +124,7 @@ This makes the application more than a traditional chatbot — it introduces a *
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**
-### 🧠 Machine Learning**
+**🧠 Machine Learning**
 
 The project contains a dedicated ML component for experimentation and prediction.
 
@@ -148,15 +147,13 @@ The repository includes trained-model infrastructure and datasets used for ML ex
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**
-### 🖥️ Desktop Application**
+**🖥️ Desktop Application**
 
 Neko AI includes an **Electron-based desktop experience**, allowing the application to run as a native-style desktop application rather than being limited to the browser.
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-**
-### 📱 Mobile Application**
+**📱 Mobile Application**
 
 The project also contains a mobile application component, allowing the Neko AI experience to be extended beyond the desktop/web environment.
 
@@ -164,7 +161,7 @@ The project also contains a mobile application component, allowing the Neko AI e
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🛠️ Tech Stack**
+**🛠️ Tech Stack**
 
 
 | Layer            | Technology              |
@@ -185,7 +182,7 @@ The project also contains a mobile application component, allowing the Neko AI e
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 📁 Project Structure**
+**📁 Project Structure**
 
 <table>
 <tr>
@@ -243,38 +240,34 @@ The project also contains a mobile application component, allowing the Neko AI e
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**
-# 🎯 Core Modules**
+**🧩 Core Modules**
 
-
-## 🧩 Core Modules
-
-### 🤖 AI Companion
+** 🤖 AI Companion**
 ![Conversations](https://img.shields.io/badge/Conversations-8B5CF6?style=flat-square)
 ![Context](https://img.shields.io/badge/Context-8B5CF6?style=flat-square)
 ![Personalization](https://img.shields.io/badge/Personalization-8B5CF6?style=flat-square)
 
-### 😊 Emotional Intelligence
+ **😊 Emotional Intelligence**
 ![Mood Tracking](https://img.shields.io/badge/Mood_Tracking-EC4899?style=flat-square)
 ![Mood History](https://img.shields.io/badge/Mood_History-EC4899?style=flat-square)
 
-### 📔 Journal
+** 📔 Journal**
 ![Daily Entries](https://img.shields.io/badge/Daily_Entries-3B82F6?style=flat-square)
 ![Reflections](https://img.shields.io/badge/Reflections-3B82F6?style=flat-square)
 ![Mood Association](https://img.shields.io/badge/Mood_Association-3B82F6?style=flat-square)
 
-### 📊 Productivity Intelligence
+ **📊 Productivity Intelligence**
 ![Activity Analysis](https://img.shields.io/badge/Activity_Analysis-10B981?style=flat-square)
 ![ML Prediction](https://img.shields.io/badge/ML_Prediction-10B981?style=flat-square)
 ![Insights](https://img.shields.io/badge/Insights-10B981?style=flat-square)
 
-### 🧠 Machine Learning
+**🧠 Machine Learning**
 ![Dataset](https://img.shields.io/badge/Dataset-F59E0B?style=flat-square)
 ![Preprocessing](https://img.shields.io/badge/Preprocessing-F59E0B?style=flat-square)
 ![Training](https://img.shields.io/badge/Training-F59E0B?style=flat-square)
 ![Prediction](https://img.shields.io/badge/Prediction-F59E0B?style=flat-square)
 
-### 🌐 Multi-platform
+**🌐 Multi-platform**
 ![Web](https://img.shields.io/badge/Web-6366F1?style=flat-square)
 ![Desktop](https://img.shields.io/badge/Desktop-6366F1?style=flat-square)
 ![Mobile](https://img.shields.io/badge/Mobile-6366F1?style=flat-square)
@@ -283,7 +276,7 @@ The project also contains a mobile application component, allowing the Neko AI e
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🧠 Machine Learning Pipeline**
+**🧠 Machine Learning Pipeline**
 
 The ML component follows a standard machine-learning workflow:
 
@@ -311,7 +304,7 @@ This separation allows the machine-learning component to evolve independently fr
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🔐 Privacy & Security**
+**🔐 Privacy & Security**
 
 Neko AI is designed with privacy and responsible AI usage in mind.
 
@@ -328,7 +321,7 @@ The project aims to:
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# ⚙️ Getting Started**
+**⚙️ Getting Started**
 
 **## Prerequisites**
 
@@ -342,7 +335,7 @@ Make sure you have installed:
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**## 1. Clone the repository**
+**1. Clone the repository**
 
 
 git clone https://github.com/anushka122-raj/neko-ai.git
@@ -352,7 +345,7 @@ cd neko-ai
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**## 2. Install frontend dependencies**
+**2. Install frontend dependencies**
 
 
 cd frontend
@@ -362,7 +355,7 @@ npm install
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**## 3. Start the frontend**
+**3. Start the frontend**
 
 
 npm run dev
@@ -373,7 +366,7 @@ or use the appropriate command defined in the project's `package.json`.
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**## 4. Setup backend**
+**4. Setup backend**
 
 cd backend
 
@@ -399,33 +392,33 @@ Then start the backend using the project's configured entry point.
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🖼️ Screenshots**
+**🖼️ Screenshots**
 
 > Replace these placeholders with actual screenshots from the application.
 
-### 🏠 Dashboard
+**🏠 Dashboard**
 
 ![Neko AI Dashboard](docs/screenshots/dashboard.png)
 
-### 💬 AI Companion
+**💬 AI Companion**
 
 ![Neko AI Chat](docs/screenshots/chat.png)
 
-### 😊 Mood Tracking
+**😊 Mood Tracking**
 
 ![Mood Tracking](docs/screenshots/mood.png)
 
-### 📔 Journal
+**📔 Journal**
 
 ![Neko AI Journal](docs/screenshots/journal.png)
 
-### 📊 Productivity Insights
+**📊 Productivity Insights**
 
 ![Productivity Dashboard](docs/screenshots/productivity.png)
 
 ---
 
-**# 🎥 Demo**
+**🎥 Demo**
 
 **Live Demo:** Coming Soon
 
@@ -434,7 +427,7 @@ Then start the backend using the project's configured entry point.
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🗺️ Roadmap**
+**🗺️ Roadmap**
 
 Neko AI is an evolving project.
 
@@ -452,7 +445,7 @@ Neko AI is an evolving project.
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**### 🔜 Planned**
+**🔜 Planned**
 
 * [ ] Long-term conversation memory
 * [ ] Advanced emotion detection
@@ -472,8 +465,7 @@ Neko AI is an evolving project.
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**
-# 🧪 Testing**
+**🧪 Testing**
 
 Testing will cover multiple layers of the system:
 
@@ -496,7 +488,7 @@ As the project moves toward production, automated testing and CI/CD will be adde
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 📚 What I Learned**
+**📚 What I Learned**
 
 Building Neko AI has been an opportunity to work across multiple areas of software engineering and AI:
 
@@ -520,7 +512,7 @@ The project also helped me understand an important distinction:
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🔮 Future Vision**
+**🔮 Future Vision**
 
 The long-term goal of Neko AI is to evolve into a **personal AI companion platform** capable of understanding different aspects of a user's daily life while keeping the user in control of their data.
 
@@ -547,7 +539,7 @@ Personalization
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 🤝 Contributing**
+**🤝 Contributing**
 
 Contributions, suggestions, and ideas are welcome.
 
@@ -563,7 +555,7 @@ If you would like to contribute:
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 📄 License**
+**📄 License**
 
 This project is currently intended primarily as a personal learning and portfolio project.
 
@@ -572,7 +564,7 @@ Add a formal open-source license here if you decide to distribute the project un
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**# 👩‍💻 Author**
+**👩‍💻 Author**
 
 **### Anushka Raj**
 
