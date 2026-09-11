@@ -196,10 +196,6 @@ flowchart LR
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-## 🧠 Machine Learning
-
-Neko AI includes a dedicated machine learning component for experimentation, model training, and prediction.
-
 ### 🔄 Machine Learning Pipeline
 
 ```mermaid
@@ -212,6 +208,7 @@ flowchart TD
     F --> G[Model Serialization]
     G --> H[Backend Integration]
     H --> I[Prediction]
+```
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
