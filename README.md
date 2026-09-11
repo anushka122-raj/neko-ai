@@ -202,30 +202,18 @@ flowchart LR
 Neko AI includes a dedicated machine learning component for
 experimentation, model training, and prediction.
 
-**🔄 ML Pipeline**
+**🔄 Machine Learning Pipeline**
 
 ```mermaid
 flowchart LR
+    A[User Data] --> B[Data Processing]
+    B --> C[Feature Engineering]
+    C --> D[ML Model]
+    D --> E[Prediction]
+    E --> F[Neko AI Insights]
+```
 
-    U["👤<br/><b>User Data</b><br/>Behavior & Inputs"]
-    P["⚙️<br/><b>Data Processing</b><br/>Cleaning & Preparation"]
-    F["🧩<br/><b>Feature Engineering</b><br/>Extract Useful Features"]
-    M["🧠<br/><b>ML Model</b><br/>Trained Model"]
-    PR["🔮<br/><b>Prediction</b><br/>Model Output"]
-    I["🐱<br/><b>Neko AI Insights</b><br/>Personalized Results"]
-
-    U --> P
-    P --> F
-    F --> M
-    M --> PR
-    PR --> I
-
-    style U fill:#3B82F6,color:#FFFFFF,stroke:#1D4ED8
-    style P fill:#8B5CF6,color:#FFFFFF,stroke:#6D28D9
-    style F fill:#F59E0B,color:#FFFFFF,stroke:#D97706
-    style M fill:#EC4899,color:#FFFFFF,stroke:#BE185D
-    style PR fill:#10B981,color:#FFFFFF,stroke:#047857
-    style I fill:#6366F1,color:#FFFFFF,stroke:#4338CA
+The repository includes trained-model infrastructure and datasets used for ML experimentation.
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
