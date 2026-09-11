@@ -177,27 +177,54 @@ experience.
 
 </div>
 
+
 🌈 **The Neko Experience**
 
 <div align="center">
 
-```text
-                 🐱 NEKO AI
-          ✨ Your Intelligent Companion ✨
-                    │
-       ┌────────────┼────────────┐
-       ↓            ↓            ↓
-    💬 CHAT       😊 MOOD      📔 JOURNAL
-       │            │            │
-       └────────────┼────────────┘
-                    ↓
-             📊 USER ACTIVITY
-                    ↓
-             🧠 ML ANALYSIS
-                    ↓
-             💡 INSIGHTS
-                    ↓
-          🎯 PERSONAL EXPERIENCE
+<img src="https://img.shields.io/badge/🐱%20NEKO%20AI-8B5CF6?style=for-the-badge&labelColor=6D28D9">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/💬%20CHAT-3B82F6?style=for-the-badge">
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=for-the-badge">
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/📔%20JOURNAL-F59E0B?style=for-the-badge">
+
+<br><br>
+
+⬇️
+
+<br>
+
+<img src="https://img.shields.io/badge/📊%20USER%20ACTIVITY-06B6D4?style=for-the-badge">
+
+<br>
+
+⬇️
+
+<br>
+
+<img src="https://img.shields.io/badge/🧠%20ML%20ANALYSIS-8B5CF6?style=for-the-badge">
+
+<br>
+
+⬇️
+
+<br>
+
+<img src="https://img.shields.io/badge/💡%20INSIGHTS-10B981?style=for-the-badge">
+
+<br>
+
+⬇️
+
+<br>
+
+<img src="https://img.shields.io/badge/🎯%20PERSONAL%20EXPERIENCE-EC4899?style=for-the-badge">
+
+</div>
 --------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
