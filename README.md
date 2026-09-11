@@ -278,25 +278,42 @@ The project also contains a mobile application component, allowing the Neko AI e
 
 **🧠 Machine Learning Pipeline**
 
-The ML component follows a standard machine-learning workflow:
+## 🧠 Machine Learning Workflow
 
-Raw Dataset
-     ↓
-Data Cleaning
-     ↓
-Feature Engineering
-     ↓
-Train / Test Split
-     ↓
-Model Training
-     ↓
-Model Evaluation
-     ↓
-Model Serialization
-     ↓
-Backend Integration
-     ↓
-Prediction
+The ML component follows a structured machine-learning pipeline:
+
+```mermaid
+flowchart TD
+
+    A["📊 Raw Dataset"]
+    B["🧹 Data Cleaning"]
+    C["⚙️ Feature Engineering"]
+    D["✂️ Train / Test Split"]
+    E["🧠 Model Training"]
+    F["📈 Model Evaluation"]
+    G["💾 Model Serialization"]
+    H["🔗 Backend Integration"]
+    I["🎯 Prediction"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+
+    style A fill:#6366F1,color:#FFFFFF
+    style B fill:#14B8A6,color:#FFFFFF
+    style C fill:#06B6D4,color:#FFFFFF
+    style D fill:#3B82F6,color:#FFFFFF
+    style E fill:#8B5CF6,color:#FFFFFF
+    style F fill:#F59E0B,color:#FFFFFF
+    style G fill:#64748B,color:#FFFFFF
+    style H fill:#10B981,color:#FFFFFF
+    style I fill:#EC4899,color:#FFFFFF
+```
 
 
 This separation allows the machine-learning component to evolve independently from the main application.
