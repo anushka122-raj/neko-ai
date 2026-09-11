@@ -1,11 +1,5 @@
 **🐱 Neko AI — Your Intelligent AI Companion**
 
-**An AI-powered personal companion designed to understand your conversations, emotions, productivity patterns, and daily experiences — all through one intelligent platform.**
-
-Neko AI is a full-stack AI companion application that combines **conversational AI, machine     learning, journaling, mood awareness, productivity analysis, and multi-platform experiences** into a single system.
-
-Instead of being just a chatbot, Neko AI is designed as a **personal AI companion** that can interact with users, learn from their interactions, help them reflect on their day, and provide personalized insights.
---------------------------------------------------------------------------------------------------
 <div align="center">
 
 <h1>🐱 Neko AI</h1>
@@ -103,18 +97,58 @@ experience.
 
 </details>
 
----
+---------------------------------------------------------------------------------------------------
 
 💙 **What Makes Neko Different?**
 
-| 🤖 Traditional Chatbot | 🐱 Neko AI |
-|---|---|
-| 💬 Mainly conversation | 💬 Conversation + personal interaction |
-| ❌ Limited user context | 🧠 Designed around user activity |
-| ❌ No journaling experience | 📔 Integrated AI Journal |
-| ❌ Basic interaction | 😊 Mood-aware experience |
-| ❌ No productivity intelligence | 📊 ML-based productivity analysis |
-| 🖥️ Usually one platform | 💻 Multi-platform architecture |
+<div align="center">
+
+<h3>💜 What Makes Neko Different? 🐱</h3>
+
+<table>
+<tr>
+<th>🤖 Traditional Chatbot</th>
+<th>🐱 Neko AI</th>
+</tr>
+
+<tr>
+<td>💬 Mainly conversation</td>
+<td>💬 <b>Conversation + Personal Interaction</b></td>
+</tr>
+
+<tr>
+<td>🧠 Limited personal context</td>
+<td>🧠 <b>User Activity & Interaction Context</b></td>
+</tr>
+
+<tr>
+<td>📄 Separate journaling tools</td>
+<td>📔 <b>Integrated AI Journal</b></td>
+</tr>
+
+<tr>
+<td>🙂 Basic conversational experience</td>
+<td>😊 <b>Mood-Aware Interaction</b></td>
+</tr>
+
+<tr>
+<td>📊 Limited productivity analysis</td>
+<td>📈 <b>ML-Based Productivity Intelligence</b></td>
+</tr>
+
+<tr>
+<td>🖥️ Often focused on one platform</td>
+<td>💻 <b>Multi-Platform Experience</b></td>
+</tr>
+
+<tr>
+<td>🔄 Reactive responses</td>
+<td>🎯 <b>Personalized AI Experience</b></td>
+</tr>
+
+</table>
+
+</div>
 
 ---
 
