@@ -218,6 +218,14 @@ flowchart TD
     style H fill:#F97316,color:#FFFFFF
     style I fill:#14B8A6,color:#FFFFFF
 ```
+** Mermaid Test**
+
+```mermaid
+graph TD
+    A[Raw Dataset] --> B[Data Cleaning]
+    B --> C[Model Training]
+    C --> D[Prediction]
+```
 
 The ML component follows a standard machine-learning workflow:
 ---------------------------------------------------------------------------------------------------
