@@ -671,21 +671,47 @@ The long-term goal is to use these entries to provide meaningful personalized in
 Neko AI includes a machine-learning component designed to analyze
 productivity-related patterns in user activity.
 
-**🔄 Productivity Analysis Pipeline**
+<div align="center">
 
-👤 User Activity
-        ↓
-📊 Activity Data
-        ↓
-⚙️ Data Preprocessing
-        ↓
-🧩 Feature Engineering
-        ↓
-🧠 Trained ML Model
-        ↓
-🔮 Prediction
-        ↓
-💡 Productivity Insight
+<img src="https://img.shields.io/badge/👤%20USER%20ACTIVITY-3B82F6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/📊%20ACTIVITY%20DATA-06B6D4?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/⚙️%20DATA%20PREPROCESSING-8B5CF6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🧩%20FEATURE%20ENGINEERING-F59E0B?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🧠%20TRAINED%20ML%20MODEL-EC4899?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🔮%20PREDICTION-6366F1?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/💡%20PRODUCTIVITY%20INSIGHT-10B981?style=for-the-badge">
+
+</div>
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -736,11 +762,58 @@ productivity-related patterns in user activity.
 
 Neko AI includes an **Electron-based desktop experience**, allowing the application to run as a native-style desktop application rather than being limited to the browser.
 
+<div align="center">
+
+<img src="https://img.shields.io/badge/🌐%20Neko%20AI%20Web%20Application-3B82F6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/⚡%20Electron%20Runtime-8B5CF6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🖥️%20Desktop%20Application-EC4899?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🐱%20Neko%20AI%20Experience-10B981?style=for-the-badge">
+
+</div>
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 **📱 Mobile Application**
 
 The project also contains a mobile application component, allowing the Neko AI experience to be extended beyond the desktop/web environment.
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/🌐%20Neko%20AI%20Platform-3B82F6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/📱%20Mobile%20Application-8B5CF6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🔗%20Connected%20Neko%20AI%20Experience-EC4899?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🐱%20Neko%20AI%20Anywhere-10B981?style=for-the-badge">
+
+</div>
 
 
 ---------------------------------------------------------------------------------------------------
