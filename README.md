@@ -52,35 +52,44 @@ Interact with Neko AI through a conversational interface designed for natural an
 mermaid
 flowchart TD
 
-    N["🐱 Neko AI<br/>AI Companion"]
+N["🐱 Neko AI<br/>AI Companion"]
 
-    N --> W["🌐 Web Frontend<br/>React"]
+ N --> W["🌐 Web Frontend<br/>React"]
     N --> D["🖥️ Desktop App<br/>Electron"]
     N --> M["📱 Mobile App<br/>Mobile"]
 
-    W --> B["⚙️ Backend API"]
+ W --> B["⚙️ Backend API"]
     D --> B
     M --> B
 
-    B --> DB["🗄️ Database"]
+ B --> DB["🗄️ Database"]
     B --> ML["🧠 ML Service"]
     B --> AI["🤖 AI Engine"]
 
-    ML --> MODEL["📊 ML Models / Data"]
+  ML --> MODEL["📊 ML Models / Data"]
 
-    classDef core fill:#8B5CF6,color:#FFFFFF,stroke:#6D28D9,stroke-width:2px;
+ classDef core fill:#8B5CF6,color:#FFFFFF,stroke:#6D28D9,stroke-width:2px;
     classDef frontend fill:#3B82F6,color:#FFFFFF,stroke:#1D4ED8,stroke-width:2px;
     classDef backend fill:#10B981,color:#FFFFFF,stroke:#047857,stroke-width:2px;
     classDef ml fill:#F59E0B,color:#FFFFFF,stroke:#D97706,stroke-width:2px;
     classDef ai fill:#EC4899,color:#FFFFFF,stroke:#BE185D,stroke-width:2px;
     classDef database fill:#64748B,color:#FFFFFF,stroke:#475569,stroke-width:2px;
 
-    class N core;
+ class N core;
     class W,D,M frontend;
     class B backend;
     class ML,MODEL ml;
     class AI ai;
     class DB database;
+-------------------------------------------------------------------------------------------------
+🧪 Architecture Test
+
+mermaid
+flowchart LR
+    A["🐱 Neko AI"] --> B["🤖 AI Engine"]
+    
+style A fill:#8B5CF6,stroke:#6D28D9,color:#FFFFFF
+    style B fill:#EC4899,stroke:#BE185D,color:#FFFFFF
 ---------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 **### 😊 Mood & Emotion Tracking**
