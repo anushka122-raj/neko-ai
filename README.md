@@ -120,15 +120,46 @@ This creates a foundation for understanding how a user's mood changes over time.
 ---------------------------------------------------------------------------------------------------
 **📔 AI Journal**
 
-The journal system allows users to record their daily thoughts and experiences.
+## 📔 AI Journal
 
-Each journal entry can contain:
+The journal system allows users to capture their daily thoughts, emotions, and personal experiences.
 
-* 📝 Text
-* 😊 Mood
-* 📅 Date
-* 💭 Personal reflections
+```mermaid
+flowchart LR
 
+    A["📝<br/><b>Thoughts</b><br/>Daily writing"]
+    B["😊<br/><b>Mood</b><br/>Emotional state"]
+    C["📅<br/><b>Date</b><br/>Daily timeline"]
+    D["💭<br/><b>Reflections</b><br/>Personal experiences"]
+
+    A --> J["📔<br/><b>AI JOURNAL</b><br/>Personal Reflection"]
+    B --> J
+    C --> J
+    D --> J
+
+    J --> I["🧠<br/><b>Personal Insights</b>"]
+
+    style A fill:#3B82F6,color:#FFFFFF,stroke:#1D4ED8
+    style B fill:#EC4899,color:#FFFFFF,stroke:#BE185D
+    style C fill:#F59E0B,color:#FFFFFF,stroke:#D97706
+    style D fill:#8B5CF6,color:#FFFFFF,stroke:#6D28D9
+    style J fill:#10B981,color:#FFFFFF,stroke:#047857
+    style I fill:#6366F1,color:#FFFFFF,stroke:#4338CA
+```
+
+### 📝 Journal Flow
+
+```text
+📝 Thoughts ──────┐
+😊 Mood ──────────┤
+📅 Date ──────────┼──→ 📔 AI JOURNAL ──→ 🧠 Personal Insights
+💭 Reflections ───┘
+```
+
+
+
+
+And it communicates the idea that the journal isn't **just a text-storage feature** — it brings together the user's **thoughts + mood + time + reflections** into a personal record.
 The long-term goal is to use these entries to provide meaningful personalized insights.
 
 ---------------------------------------------------------------------------------------------------
