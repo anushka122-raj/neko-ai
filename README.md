@@ -196,18 +196,12 @@ flowchart LR
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-### 🔄 Machine Learning Pipeline
+# Neko AI
 
 ```mermaid
 flowchart TD
-    A[Raw Dataset] --> B[Data Cleaning]
-    B --> C[Feature Engineering]
-    C --> D[Train Test Split]
-    D --> E[Model Training]
-    E --> F[Model Evaluation]
-    F --> G[Model Serialization]
-    G --> H[Backend Integration]
-    H --> I[Prediction]
+    A[Hello] --> B[World]
+```
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
