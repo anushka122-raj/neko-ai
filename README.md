@@ -47,7 +47,7 @@ Interact with Neko AI through a conversational interface designed for natural an
 * Companion-style interaction
 ---------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-## 🏗️ System Architecture
+### 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
@@ -68,25 +68,17 @@ flowchart TD
 
     ML --> MODEL["📊 ML Models / Data"]
 
-    style N fill:#8B5CF6,stroke:#6D28D9,color:#FFFFFF,stroke-width:2px
-    style W fill:#3B82F6,stroke:#1D4ED8,color:#FFFFFF,stroke-width:2px
-    style D fill:#3B82F6,stroke:#1D4ED8,color:#FFFFFF,stroke-width:2px
-    style M fill:#3B82F6,stroke:#1D4ED8,color:#FFFFFF,stroke-width:2px
-    style B fill:#10B981,stroke:#047857,color:#FFFFFF,stroke-width:2px
-    style DB fill:#64748B,stroke:#475569,color:#FFFFFF,stroke-width:2px
-    style ML fill:#F59E0B,stroke:#D97706,color:#FFFFFF,stroke-width:2px
-    style AI fill:#EC4899,stroke:#BE185D,color:#FFFFFF,stroke-width:2px
-    style MODEL fill:#F59E0B,stroke:#D97706,color:#FFFFFF,stroke-width:2px
--------------------------------------------------------------------------------------------------
-🧪 Architecture Test
-
-mermaid
-flowchart LR
-    A["🐱 Neko AI"] --> B["🤖 AI Engine"]
-    
-style A fill:#8B5CF6,stroke:#6D28D9,color:#FFFFFF
-    style B fill:#EC4899,stroke:#BE185D,color:#FFFFFF
----------------------------------------------------------------------------------------------------
+    style N fill:#8B5CF6,color:#FFFFFF
+    style W fill:#3B82F6,color:#FFFFFF
+    style D fill:#3B82F6,color:#FFFFFF
+    style M fill:#3B82F6,color:#FFFFFF
+    style B fill:#10B981,color:#FFFFFF
+    style DB fill:#64748B,color:#FFFFFF
+    style ML fill:#F59E0B,color:#FFFFFF
+    style AI fill:#EC4899,color:#FFFFFF
+    style MODEL fill:#F59E0B,color:#FFFFFF
+```
+---------------------------------------
 --------------------------------------------------------------------------------------------------
 **### 😊 Mood & Emotion Tracking**
 
