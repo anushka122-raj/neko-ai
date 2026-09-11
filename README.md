@@ -5,7 +5,140 @@
 Neko AI is a full-stack AI companion application that combines **conversational AI, machine     learning, journaling, mood awareness, productivity analysis, and multi-platform experiences** into a single system.
 
 Instead of being just a chatbot, Neko AI is designed as a **personal AI companion** that can interact with users, learn from their interactions, help them reflect on their day, and provide personalized insights.
+--------------------------------------------------------------------------------------------------
+<div align="center">
 
+<h1>🐱 Neko AI</h1>
+
+<h3>✨ Your Intelligent AI Companion ✨</h3>
+
+<p>
+An AI-powered personal companion designed to understand your
+<b>conversations</b>, <b>emotions</b>, <b>productivity patterns</b>,
+and <b>daily experiences</b>.
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/AI%20Companion-8B5CF6?style=for-the-badge">
+<img src="https://img.shields.io/badge/Machine%20Learning-EC4899?style=for-the-badge">
+<img src="https://img.shields.io/badge/Productivity-10B981?style=for-the-badge">
+<img src="https://img.shields.io/badge/Multi--Platform-06B6D4?style=for-the-badge">
+</p>
+
+</div>
+
+---
+
+💜 **Meet Neko**
+
+> 🐾 **Neko isn't just here to answer questions.**  
+> Neko is designed to become part of your everyday digital life.
+
+<details>
+<summary>💬 <b>Talk with Neko</b></summary>
+
+<br>
+
+Have natural conversations with your AI companion.
+
+Neko provides a conversational interface where users can interact
+with the system, ask questions, share thoughts, and build an
+ongoing interaction experience.
+
+</details>
+
+<details>
+<summary>😊 <b>Express Your Mood</b></summary>
+
+<br>
+
+Your day isn't just about productivity.
+
+Neko AI includes mood-aware features that allow users to record
+and reflect on their emotional state alongside their daily activities.
+
+</details>
+
+<details>
+<summary>📔 <b>Write Your Day</b></summary>
+
+<br>
+
+Use the AI Journal to record:
+
+📝 **Thoughts**  
+😊 **Mood**  
+📅 **Daily experiences**  
+💭 **Personal reflections**
+
+Your journal becomes a personal space for documenting everyday experiences.
+
+</details>
+
+<details>
+<summary>📊 <b>Understand Your Productivity</b></summary>
+
+<br>
+
+Neko AI includes a machine-learning component designed to analyze
+productivity-related activity patterns.
+
+The ML pipeline processes activity data, extracts relevant features,
+and generates productivity-related predictions.
+
+</details>
+
+<details>
+<summary>🧠 <b>Turn Data Into Intelligence</b></summary>
+
+<br>
+
+Neko AI combines different sources of interaction — conversations,
+mood, journaling, and activity — into a more intelligent personal
+experience.
+
+<br>
+
+<b>👤 User Interaction → 📊 Data → 🧠 ML Analysis → 💡 Insights → 🎯 Personalized Experience</b>
+
+</details>
+
+---
+
+💙 **What Makes Neko Different?**
+
+| 🤖 Traditional Chatbot | 🐱 Neko AI |
+|---|---|
+| 💬 Mainly conversation | 💬 Conversation + personal interaction |
+| ❌ Limited user context | 🧠 Designed around user activity |
+| ❌ No journaling experience | 📔 Integrated AI Journal |
+| ❌ Basic interaction | 😊 Mood-aware experience |
+| ❌ No productivity intelligence | 📊 ML-based productivity analysis |
+| 🖥️ Usually one platform | 💻 Multi-platform architecture |
+
+---
+
+🌈 **The Neko Experience**
+
+<div align="center">
+
+```text
+                 🐱 NEKO AI
+          ✨ Your Intelligent Companion ✨
+                    │
+       ┌────────────┼────────────┐
+       ↓            ↓            ↓
+    💬 CHAT       😊 MOOD      📔 JOURNAL
+       │            │            │
+       └────────────┼────────────┘
+                    ↓
+             📊 USER ACTIVITY
+                    ↓
+             🧠 ML ANALYSIS
+                    ↓
+             💡 INSIGHTS
+                    ↓
+          🎯 PERSONAL EXPERIENCE
 --------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
@@ -120,7 +253,6 @@ This creates a foundation for understanding how a user's mood changes over time.
 ---------------------------------------------------------------------------------------------------
 **📔 AI Journal**
 
-## 📔 AI Journal
 
 The journal system allows users to capture their daily thoughts, emotions, and personal experiences.
 
@@ -147,7 +279,7 @@ flowchart LR
     style I fill:#6366F1,color:#FFFFFF,stroke:#4338CA
 ```
 
-### 📝 Journal Flow
+**📝 Journal Flow**
 
 ```text
 📝 Thoughts ──────┐
@@ -171,37 +303,44 @@ productivity-related patterns in user activity.
 
 **🔄 Productivity Analysis Pipeline**
 
-```mermaid
-flowchart LR
-
-    A["👤<br/><b>User Activity</b><br/>Daily Behavior"]
-    B["📊<br/><b>Activity Data</b><br/>Collected Patterns"]
-    C["⚙️<br/><b>Data Processing</b><br/>Prepare Features"]
-    D["🧠<br/><b>ML Analysis</b><br/>Pattern Detection"]
-    E["📈<br/><b>Productivity Patterns</b><br/>Identify Trends"]
-    F["💡<br/><b>Productivity Insights</b><br/>Data-Driven Intelligence"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-
-    style A fill:#3B82F6,color:#FFFFFF,stroke:#1D4ED8
-    style B fill:#06B6D4,color:#FFFFFF,stroke:#0E7490
-    style C fill:#8B5CF6,color:#FFFFFF,stroke:#6D28D9
-    style D fill:#EC4899,color:#FFFFFF,stroke:#BE185D
-    style E fill:#F59E0B,color:#FFFFFF,stroke:#D97706
-    style F fill:#10B981,color:#FFFFFF,stroke:#047857
+👤 User Activity
+        ↓
+📊 Activity Data
+        ↓
+⚙️ Data Preprocessing
+        ↓
+🧩 Feature Engineering
+        ↓
+🧠 Trained ML Model
+        ↓
+🔮 Prediction
+        ↓
+💡 Productivity Insight
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-# Neko AI 
+**🧠 Machine Learning Pipeline**
 
-```mermaid
-flowchart TD
-    A[Hello] --> B[World]
-```
+The ML component follows a standard machine-learning workflow:
+
+Raw Dataset
+     ↓
+Data Cleaning
+     ↓
+Feature Engineering
+     ↓
+Train / Test Split
+     ↓
+Model Training
+     ↓
+Model Evaluation
+     ↓
+Model Serialization
+     ↓
+Backend Integration
+     ↓
+Prediction
+
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
