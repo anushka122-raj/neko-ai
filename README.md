@@ -49,6 +49,8 @@ Interact with Neko AI through a conversational interface designed for natural an
 --------------------------------------------------------------------------------------------------
 ### 🏗️ System Architecture
 
+Neko AI follows a modular architecture separating the user interface, backend services, machine-learning components, and platform-specific applications.
+
 ```mermaid
 flowchart TD
 
@@ -159,45 +161,6 @@ Neko AI includes an **Electron-based desktop experience**, allowing the applicat
 The project also contains a mobile application component, allowing the Neko AI experience to be extended beyond the desktop/web environment.
 
 
----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-
-**
-# 🏗️ System Architecture**
-
-Neko AI follows a modular architecture separating the user interface, backend services, machine-learning components, and platform-specific applications.
-
-                 **           ┌─────────────────────┐
-                         │      Neko AI        │
-                         │    AI Companion     │
-                         └──────────┬──────────┘
-                                    │
-                 ┌──────────────────┼──────────────────┐
-                 │                  │                  │
-                 ▼                  ▼                  ▼
-        ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
-        │ Web Frontend   │ │ Desktop App    │ │ Mobile App     │
-        │    React       │ │    Electron    │ │    Mobile      │
-        └───────┬────────┘ └───────┬────────┘ └───────┬────────┘
-                │                  │                  │
-                └──────────────────┼──────────────────┘
-                                   ▼
-                         ┌────────────────────┐
-                         │     Backend API    │
-                         └─────────┬──────────┘
-                                   │
-                    ┌──────────────┼──────────────┐
-                    │              │              │
-                    ▼              ▼              ▼
-             ┌───────────┐  ┌────────────┐  ┌────────────┐
-             │ Database  │  │ ML Service │  │ AI Engine  │
-             └───────────┘  └─────┬──────┘  └────────────┘
-                                  │
-                                  ▼
-                         ┌──────────────────┐
-                         │ ML Models / Data │
-                         └──────────────────┘
-              **
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
