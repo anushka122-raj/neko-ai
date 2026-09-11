@@ -748,21 +748,37 @@ The project also contains a mobile application component, allowing the Neko AI e
 
 **🛠️ Tech Stack**
 
+**🛠️ Tech Stack**
 
-| Layer            | Technology              |
-| ---------------- | ----------------------- |
-| Frontend         | React                   |
-| Backend          | Node.js / Backend APIs  |
-| Database         | SQLite / database layer |
-| Machine Learning | Python                  |
-| ML Models        | Scikit-learn            |
-| Desktop          | Electron                |
-| Mobile           | Mobile application      |
-| Styling          | CSS                     |
-| Icons            | Lucide                  |
-| Version Control  | Git & GitHub            |
+<div align="center">
 
-> The exact technologies can be updated as the project evolves.
+<img src="https://img.shields.io/badge/⚛️%20FRONTEND-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/⚙️%20BACKEND-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/🗄️%20DATABASE-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🐍%20PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/🧠%20SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+<img src="https://img.shields.io/badge/🖥️%20ELECTRON-47848F?style=for-the-badge&logo=electron&logoColor=white" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/📱%20MOBILE-8B5CF6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/🎨%20CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/✨%20LUCIDE-F56565?style=for-the-badge" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🔀%20GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/🐙%20GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" />
+
+</div>
+
+<br>
+
+> 💡 **The technology stack may evolve as Neko AI continues to develop.**
+
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -870,18 +886,56 @@ This separation allows the machine-learning component to evolve independently fr
 
 **🔐 Privacy & Security**
 
-Neko AI is designed with privacy and responsible AI usage in mind.
+<div align="center">
 
-The project aims to:
+<img src="https://img.shields.io/badge/🔐%20PRIVACY%20%26%20SECURITY-6366F1?style=for-the-badge&labelColor=4338CA" />
 
-* Keep personal data separated from application logic
-* Avoid committing secrets to Git
-* Keep sensitive configuration in environment variables
-* Prevent local database files from being unnecessarily tracked
-* Separate datasets from production application code
+<br><br>
 
-**Never commit API keys, passwords, tokens, `.env` files, or private datasets to the repository.**
+</div>
 
+**Neko AI** is designed with privacy and responsible AI usage in mind.
+
+<br>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/👤%20PERSONAL%20DATA-3B82F6?style=for-the-badge" />
+
+&nbsp;→&nbsp;
+
+<img src="https://img.shields.io/badge/⚙️%20APPLICATION%20LOGIC-8B5CF6?style=for-the-badge" />
+
+&nbsp;→&nbsp;
+
+<img src="https://img.shields.io/badge/🔒%20PROTECTED%20CONFIGURATION-10B981?style=for-the-badge" />
+
+</div>
+
+<br>
+
+**The project aims to:**
+
+* 🔵 **Keep personal data separated from application logic**
+* 🟣 **Avoid committing secrets to Git**
+* 🟢 **Keep sensitive configuration in environment variables**
+* 🟠 **Prevent local database files from being unnecessarily tracked**
+* 🔷 **Separate datasets from production application code**
+
+<br>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/🔑%20NO%20API%20KEYS-DC2626?style=for-the-badge" />
+<img src="https://img.shields.io/badge/🔒%20NO%20PASSWORDS-DC2626?style=for-the-badge" />
+<img src="https://img.shields.io/badge/🛡️%20NO%20TOKENS-DC2626?style=for-the-badge" />
+<img src="https://img.shields.io/badge/📁%20NO%20.ENV%20FILES-DC2626?style=for-the-badge" />
+
+</div>
+
+<br>
+
+> ⚠️ **Never commit API keys, passwords, tokens, `.env` files, or private datasets to the repository.**
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
