@@ -261,7 +261,7 @@ into a more intelligent personal experience.
 </table>
 
 </div>
-
+----------------------------------------------------------------------------------------------------
 
 🌈 **The Neko Experience**
 
@@ -364,11 +364,148 @@ Interact with Neko AI through a conversational interface designed for natural an
 
 **Features include:**
 
-* AI-powered conversations
-* Conversation history
-* Context-aware interactions
-* Personalized responses
-* Companion-style interaction
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=110&section=header&text=🚀%20Features&fontSize=40&fontColor=ffffff&animation=fadeIn" />
+
+<br><br>
+
+</div>
+
+<table>
+<tr>
+
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/💬%20AI%20COMPANION-3B82F6?style=for-the-badge&labelColor=1D4ED8" />
+
+<br><br>
+
+Interact with Neko AI through a conversational interface
+designed for natural and engaging interactions.
+
+<br><br>
+
+🧠 AI-powered conversations  
+📜 Conversation history  
+🔄 Context-aware interactions  
+✨ Personalized responses  
+🐾 Companion-style interaction
+
+</td>
+
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/😊%20MOOD%20AWARENESS-EC4899?style=for-the-badge&labelColor=BE185D" />
+
+<br><br>
+
+Express, record, and reflect on your daily emotional state.
+
+<br><br>
+
+😊 Mood tracking  
+📅 Daily mood records  
+💭 Emotional reflection  
+📊 Mood-related activity
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/📔%20AI%20JOURNAL-F59E0B?style=for-the-badge&labelColor=D97706" />
+
+<br><br>
+
+A personal space for recording your everyday experiences.
+
+<br><br>
+
+📝 Daily thoughts  
+😊 Mood  
+📅 Journal entries  
+💭 Personal reflections
+
+</td>
+
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/📊%20PRODUCTIVITY%20INTELLIGENCE-06B6D4?style=for-the-badge&labelColor=0891B2" />
+
+<br><br>
+
+Use machine learning to analyze productivity-related
+activity patterns.
+
+<br><br>
+
+📊 Activity data  
+⚙️ Data processing  
+🧩 Feature extraction  
+🧠 ML analysis  
+💡 Productivity predictions
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/🖥️%20MULTI--PLATFORM-8B5CF6?style=for-the-badge&labelColor=6D28D9" />
+
+<br><br>
+
+Experience Neko across different application environments.
+
+<br><br>
+
+🌐 Web application  
+🖥️ Desktop application  
+📱 Mobile application
+
+</td>
+
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/🧠%20MACHINE%20LEARNING-10B981?style=for-the-badge&labelColor=047857" />
+
+<br><br>
+
+A dedicated ML layer adds data-driven intelligence
+to the Neko experience.
+
+<br><br>
+
+📂 Dataset  
+⚙️ Processing  
+🧩 Feature engineering  
+🤖 Model training  
+🔮 Prediction
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/💬%20CHAT-3B82F6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=for-the-badge" />
+<img src="https://img.shields.io/badge/📔%20JOURNAL-F59E0B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/📊%20PRODUCTIVITY-06B6D4?style=for-the-badge" />
+<img src="https://img.shields.io/badge/🧠%20ML-10B981?style=for-the-badge" />
+<img src="https://img.shields.io/badge/🐾%20NEKO-8B5CF6?style=for-the-badge" />
+
+</div>
 ---------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 **🏗️ System Architecture**
