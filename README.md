@@ -1,4 +1,4 @@
-**# 🐱 Neko AI — Your Intelligent AI Companion**
+**🐱 Neko AI — Your Intelligent AI Companion**
 
 **An AI-powered personal companion designed to understand your conversations, emotions, productivity patterns, and daily experiences — all through one intelligent platform.**
 
@@ -9,7 +9,7 @@ Instead of being just a chatbot, Neko AI is designed as a **personal AI companio
 --------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
-** ✨ Why Neko AI?**
+**✨ Why Neko AI?**
 
 Most AI assistants focus primarily on answering questions.
 
@@ -34,7 +34,7 @@ The project explores how AI can move from a simple **question → answer** syste
 
 **🚀 Features**
 
-### **💬 AI Companion**
+**💬 AI Companion**
 
 Interact with Neko AI through a conversational interface designed for natural and engaging interactions.
 
@@ -47,7 +47,7 @@ Interact with Neko AI through a conversational interface designed for natural an
 * Companion-style interaction
 ---------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
-** 🏗️ System Architecture**
+**🏗️ System Architecture**
 
 Neko AI follows a modular architecture separating the user interface, backend services, machine-learning components, and platform-specific applications.
 
@@ -98,7 +98,7 @@ This creates a foundation for understanding how a user's mood changes over time.
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
-** 📔 AI Journal**
+**📔 AI Journal**
 
 The journal system allows users to record their daily thoughts and experiences.
 
