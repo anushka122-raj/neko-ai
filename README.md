@@ -507,8 +507,7 @@ to the Neko experience.
 
 </div>
 ---------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------
-**🏗️ System Architecture**
+-------------------------------------------------------------------------------------------------- **🏗️ System Architecture**
 
 Neko AI follows a modular architecture separating the user interface, backend services, machine-learning components, and platform-specific applications.
 
@@ -547,16 +546,78 @@ flowchart TD
 
 Neko AI allows users to record and track their emotional state.
 
-Users can:
+<div align="center">
 
-* Select their current mood
-* Record how they are feeling
-* Track mood patterns
-* Connect journal entries with moods
-* Visualize emotional trends
+<img src="https://img.shields.io/badge/😊%20MOOD%20%26%20EMOTION%20TRACKING-EC4899?style=for-the-badge&labelColor=BE185D" />
 
-This creates a foundation for understanding how a user's mood changes over time.
+<br><br>
 
+<img src="https://img.shields.io/badge/😊%20SELECT%20MOOD-EC4899?style=for-the-badge" />
+&nbsp;
+<img src="https://img.shields.io/badge/💭%20RECORD%20FEELINGS-8B5CF6?style=for-the-badge" />
+&nbsp;
+<img src="https://img.shields.io/badge/📊%20TRACK%20PATTERNS-06B6D4?style=for-the-badge" />
+
+<br><br>
+
+</div>
+
+Neko AI allows users to record and track their emotional state.
+
+<br>
+
+<div align="center">
+
+| 😊 | 💭 | 📊 | 📔 | 📈 |
+|:---:|:---:|:---:|:---:|:---:|
+| **Select Mood** | **Record Feelings** | **Track Patterns** | **Connect Journal** | **Visualize Trends** |
+
+</div>
+
+<br>
+
+**😊 Select your current mood**  
+Choose and record how you're feeling.
+
+**💭 Record how you are feeling**  
+Capture your emotional state alongside your daily activities.
+
+**📊 Track mood patterns**  
+Build a history of mood-related activity over time.
+
+**📔 Connect journal entries with moods**  
+Associate your thoughts and daily experiences with your selected mood.
+
+**📈 Visualize emotional trends**  
+Use recorded mood information to understand changes over time.
+
+<br>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/💭%20FEELINGS-8B5CF6?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/📔%20JOURNAL- F59E0B?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/📊%20MOOD%20DATA-06B6D4?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/📈%20EMOTIONAL%20TRENDS-10B981?style=for-the-badge" />
+
+</div>
+
+<br>
+
+> 💡 **The goal:** create a foundation for understanding how a user's mood changes over time.
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 **📔 AI Journal**
