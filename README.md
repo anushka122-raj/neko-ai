@@ -222,37 +222,37 @@ NekoAI/
 # 🎯 Core Modules**
 
 
-Neko AI
-│
-├── 🤖 AI Companion
-│   ├── Conversations
-│   ├── Context
-│   └── Personalization
-│
-├── 😊 Emotional Intelligence
-│   ├── Mood Tracking
-│   └── Mood History
-│
-├── 📔 Journal
-│   ├── Daily Entries
-│   ├── Reflections
-│   └── Mood Association
-│
-├── 📊 Productivity Intelligence
-│   ├── Activity Analysis
-│   ├── ML Prediction
-│   └── Insights
-│
-├── 🧠 Machine Learning
-│   ├── Dataset
-│   ├── Preprocessing
-│   ├── Training
-│   └── Prediction
-│
-└── 🌐 Multi-platform
-    ├── Web
-    ├── Desktop
-    └── Mobile
+## 🧩 Core Modules
+
+### 🤖 AI Companion
+![Conversations](https://img.shields.io/badge/Conversations-8B5CF6?style=flat-square)
+![Context](https://img.shields.io/badge/Context-8B5CF6?style=flat-square)
+![Personalization](https://img.shields.io/badge/Personalization-8B5CF6?style=flat-square)
+
+### 😊 Emotional Intelligence
+![Mood Tracking](https://img.shields.io/badge/Mood_Tracking-EC4899?style=flat-square)
+![Mood History](https://img.shields.io/badge/Mood_History-EC4899?style=flat-square)
+
+### 📔 Journal
+![Daily Entries](https://img.shields.io/badge/Daily_Entries-3B82F6?style=flat-square)
+![Reflections](https://img.shields.io/badge/Reflections-3B82F6?style=flat-square)
+![Mood Association](https://img.shields.io/badge/Mood_Association-3B82F6?style=flat-square)
+
+### 📊 Productivity Intelligence
+![Activity Analysis](https://img.shields.io/badge/Activity_Analysis-10B981?style=flat-square)
+![ML Prediction](https://img.shields.io/badge/ML_Prediction-10B981?style=flat-square)
+![Insights](https://img.shields.io/badge/Insights-10B981?style=flat-square)
+
+### 🧠 Machine Learning
+![Dataset](https://img.shields.io/badge/Dataset-F59E0B?style=flat-square)
+![Preprocessing](https://img.shields.io/badge/Preprocessing-F59E0B?style=flat-square)
+![Training](https://img.shields.io/badge/Training-F59E0B?style=flat-square)
+![Prediction](https://img.shields.io/badge/Prediction-F59E0B?style=flat-square)
+
+### 🌐 Multi-platform
+![Web](https://img.shields.io/badge/Web-6366F1?style=flat-square)
+![Desktop](https://img.shields.io/badge/Desktop-6366F1?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile-6366F1?style=flat-square)
 
 
 ---------------------------------------------------------------------------------------------------
