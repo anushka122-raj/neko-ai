@@ -5,6 +5,7 @@
 Neko AI is a full-stack AI companion application that combines **conversational AI, machine     learning, journaling, mood awareness, productivity analysis, and multi-platform experiences** into a single system.
 
 Instead of being just a chatbot, Neko AI is designed as a **personal AI companion** that can interact with users, learn from their interactions, help them reflect on their day, and provide personalized insights.
+
 --------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
@@ -30,8 +31,8 @@ The project explores how AI can move from a simple **question → answer** syste
 
 -------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
-**
-# 🚀 Features**
+
+**# 🚀 Features**
 
 ### **💬 AI Companion**
 
