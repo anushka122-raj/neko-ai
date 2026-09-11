@@ -541,7 +541,7 @@ flowchart TD
     style AI fill:#EC4899,color:#FFFFFF
     style MODEL fill:#F59E0B,color:#FFFFFF
 ```
----------------------------------------
+--------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 **😊 Mood & Emotion Tracking**
 
@@ -665,7 +665,7 @@ And it communicates the idea that the journal isn't **just a text-storage featur
 The long-term goal is to use these entries to provide meaningful personalized insights.
 
 ---------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 **📊 Productivity Intelligence**
 
 Neko AI includes a machine-learning component designed to analyze
@@ -714,7 +714,7 @@ productivity-related patterns in user activity.
 </div>
 
 ---------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 **🧠 Machine Learning Pipeline**
 
 <div align="center">
@@ -756,7 +756,7 @@ productivity-related patterns in user activity.
 </div>
 
 ---------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 **🖥️ Desktop Application**
 
@@ -786,8 +786,8 @@ Neko AI includes an **Electron-based desktop experience**, allowing the applicat
 
 </div>
 ---------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-**📱 Mobile Application**
+---------------------------------------------------------------------------------------------------
+ **📱 Mobile Application**
 
 The project also contains a mobile application component, allowing the Neko AI experience to be extended beyond the desktop/web environment.
 
@@ -817,9 +817,7 @@ The project also contains a mobile application component, allowing the Neko AI e
 
 
 ---------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
-
-**🛠️ Tech Stack**
+---------------------------------------------------------------------------------------------------
 
 **🛠️ Tech Stack**
 
@@ -1140,7 +1138,7 @@ Then start the backend using the project's configured entry point.
 
 Neko AI is an evolving project.
 
-**### ✅ Completed / In Progress**
+**✅ Completed / In Progress**
 
 * [x] React-based frontend
 * [x] Backend architecture
@@ -1179,17 +1177,41 @@ Neko AI is an evolving project.
 Testing will cover multiple layers of the system:
 
 
-Frontend
-   ↓
-Component Testing
-   ↓
-API Testing
-   ↓
-Backend Testing
-   ↓
-ML Model Evaluation
-   ↓
-End-to-End Testing
+<div align="center">
+
+<img src="https://img.shields.io/badge/🎨%20FRONTEND-3B82F6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🧩%20COMPONENT%20TESTING-8B5CF6?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🔗%20API%20TESTING-06B6D4?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/⚙️%20BACKEND%20TESTING-F59E0B?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🧠%20ML%20MODEL%20EVALUATION-EC4899?style=for-the-badge">
+
+<br><br>
+⬇️
+<br><br>
+
+<img src="https://img.shields.io/badge/🚀%20END--TO--END%20TESTING-10B981?style=for-the-badge">
+
+</div>
 
 
 As the project moves toward production, automated testing and CI/CD will be added.
@@ -1201,18 +1223,47 @@ As the project moves toward production, automated testing and CI/CD will be adde
 
 Building Neko AI has been an opportunity to work across multiple areas of software engineering and AI:
 
-* Full-stack application development
-* React architecture
-* Backend API development
-* Database integration
-* Machine-learning pipelines
-* Data preprocessing
-* Model training and evaluation
-* AI application design
-* Desktop application development
-* Mobile application architecture
-* Git and GitHub workflows
-* Project architecture and documentation
+<div align="center">
+
+<img src="https://img.shields.io/badge/💻%20Full--Stack%20Development-3B82F6?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/⚛️%20React%20Architecture-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/⚙️%20Backend%20APIs-8B5CF6?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/🗄️%20Database%20Integration-06B6D4?style=for-the-badge">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🧠%20Machine%20Learning-EC4899?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/📊%20Data%20Preprocessing-F59E0B?style=for-the-badge">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🤖%20Model%20Training%20%26%20Evaluation-10B981?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/✨%20AI%20Application%20Design-6366F1?style=for-the-badge">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🖥️%20Desktop%20Development-14B8A6?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/📱%20Mobile%20Architecture-F43F5E?style=for-the-badge">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🔀%20Git%20%26%20GitHub-F97316?style=for-the-badge&logo=git&logoColor=white">
+&nbsp;
+<img src="https://img.shields.io/badge/🏗️%20Project%20Architecture-7C3AED?style=for-the-badge">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/📚%20Technical%20Documentation-64748B?style=for-the-badge">
+
+</div>
 
 The project also helped me understand an important distinction:
 
@@ -1225,25 +1276,39 @@ The project also helped me understand an important distinction:
 
 The long-term goal of Neko AI is to evolve into a **personal AI companion platform** capable of understanding different aspects of a user's daily life while keeping the user in control of their data.
 
-Future versions may combine:
+<div align="center">
 
+<img src="https://img.shields.io/badge/💬%20Conversation-3B82F6?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/🧠%20Memory-8B5CF6?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/😊%20Mood-EC4899?style=for-the-badge">
 
-**Conversation
-     +
-Memory
-     +
-Mood
-     +
-Journal
-     +
-Productivity
-     +
-Personalization
-     ↓
-┌──────────────────────┐
-│   PERSONAL AI         │
-│     COMPANION         │
-└──────────────────────┘**
+<br><br>
+
+<img src="https://img.shields.io/badge/📔%20Journal-F59E0B?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/📊%20Productivity-06B6D4?style=for-the-badge">
+&nbsp;
+<img src="https://img.shields.io/badge/✨%20Personalization-10B981?style=for-the-badge">
+
+<br><br>
+
+⬇️ &nbsp;&nbsp; ⬇️ &nbsp;&nbsp; ⬇️
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🧠%20PERSONAL%20INTELLIGENCE%20LAYER-6366F1?style=for-the-badge">
+
+<br><br>
+
+⬇️
+
+<br><br>
+
+<img src="https://img.shields.io/badge/🐱%20PERSONAL%20AI%20COMPANION-EC4899?style=for-the-badge">
+
+</div>
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
