@@ -20,150 +20,166 @@ and <b>daily experiences</b>.
 
 </div>
 
----
+-----------------------------------------------------------------------------------------------
 
 💜 **Meet Neko**
+> 🐾**Neko isn't just here to answer questions.**  
+     Neko is designed to become part of your everyday digital life.
+
+<!-- 🌈 MEET NEKO -->
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=120&section=header&text=💜%20Meet%20Neko&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+
+<br>
+
+<img src="https://img.shields.io/badge/🐾%20NOT%20JUST%20A%20CHATBOT-8B5CF6?style=for-the-badge&labelColor=6D28D9" />
+
+<br><br>
+
+</div>
+
 > 🐾 **Neko isn't just here to answer questions.**  
 > Neko is designed to become part of your everyday digital life.
 
 <br>
 
-<details>
-<summary>
-💬 <b>Talk with Neko</b>
-</summary>
+<div align="center">
 
-<br>
+<table>
+<tr>
 
-<img src="https://img.shields.io/badge/💬%20CONVERSATION-3B82F6?style=for-the-badge">
+<td width="50%" align="center">
+
+<img src="https://img.shields.io/badge/💬%20TALK%20WITH%20NEKO-3B82F6?style=for-the-badge&labelColor=1D4ED8" />
 
 <br><br>
 
 Have natural conversations with your AI companion.
 
+<br><br>
+
 Neko provides a conversational interface where users can interact
 with the system, ask questions, share thoughts, and build an
 ongoing interaction experience.
 
-</details>
+</td>
 
-<br>
+<td width="50%" align="center">
 
-<details>
-<summary>
-😊 <b>Express Your Mood</b>
-</summary>
-
-<br>
-
-<img src="https://img.shields.io/badge/😊%20MOOD%20AWARENESS-EC4899?style=for-the-badge">
+<img src="https://img.shields.io/badge/😊%20EXPRESS%20YOUR%20MOOD-EC4899?style=for-the-badge&labelColor=BE185D" />
 
 <br><br>
 
 Your day isn't just about productivity.
 
+<br><br>
+
 Neko AI includes mood-aware features that allow users to record
 and reflect on their emotional state alongside their daily activities.
 
-</details>
+</td>
 
-<br>
+</tr>
 
-<details>
-<summary>
-📔 <b>Write Your Day</b>
-</summary>
+<tr>
 
-<br>
+<td width="50%" align="center">
 
-<img src="https://img.shields.io/badge/📔%20AI%20JOURNAL-F59E0B?style=for-the-badge">
+<img src="https://img.shields.io/badge/📔%20WRITE%20YOUR%20DAY-F59E0B?style=for-the-badge&labelColor=D97706" />
 
 <br><br>
 
 Use the AI Journal to record:
 
+<br><br>
+
+<img src="https://img.shields.io/badge/📝%20THOUGHTS-3B82F6?style=flat-square" />
+<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=flat-square" />
+
 <br>
 
-<img src="https://img.shields.io/badge/📝%20THOUGHTS-3B82F6?style=flat-square">
-<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=flat-square">
-<img src="https://img.shields.io/badge/📅%20EXPERIENCES-F59E0B?style=flat-square">
-<img src="https://img.shields.io/badge/💭%20REFLECTIONS-8B5CF6?style=flat-square">
+<img src="https://img.shields.io/badge/📅%20EXPERIENCES-F59E0B?style=flat-square" />
+<img src="https://img.shields.io/badge/💭%20REFLECTIONS-8B5CF6?style=flat-square" />
 
 <br><br>
 
-Your journal becomes a personal space for documenting everyday experiences.
+Your journal becomes a personal space for documenting
+everyday experiences.
 
-</details>
+</td>
 
-<br>
+<td width="50%" align="center">
 
-<details>
-<summary>
-📊 <b>Understand Your Productivity</b>
-</summary>
-
-<br>
-
-<img src="https://img.shields.io/badge/📊%20PRODUCTIVITY%20INTELLIGENCE-06B6D4?style=for-the-badge">
+<img src="https://img.shields.io/badge/📊%20UNDERSTAND%20YOUR%20PRODUCTIVITY-06B6D4?style=for-the-badge&labelColor=0891B2" />
 
 <br><br>
 
 Neko AI includes a machine-learning component designed to analyze
 productivity-related activity patterns.
 
+<br><br>
+
 The ML pipeline processes activity data, extracts relevant features,
 and generates productivity-related predictions.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<img src="https://img.shields.io/badge/🧠%20TURN%20DATA%20INTO%20INTELLIGENCE-8B5CF6?style=for-the-badge&labelColor=6D28D9" />
+
 <br><br>
 
-<img src="https://img.shields.io/badge/DATA-06B6D4?style=flat-square">
-➡️
-<img src="https://img.shields.io/badge/FEATURES-8B5CF6?style=flat-square">
-➡️
-<img src="https://img.shields.io/badge/ML%20MODEL-EC4899?style=flat-square">
-➡️
-<img src="https://img.shields.io/badge/PREDICTION-10B981?style=flat-square">
+Neko AI combines different sources of interaction —
+conversations, mood, journaling, and activity —
+into a more intelligent personal experience.
 
-</details>
+<br><br>
+
+<img src="https://img.shields.io/badge/👤%20USER%20INTERACTION-3B82F6?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/📊%20DATA-06B6D4?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🧠%20ML%20ANALYSIS-8B5CF6?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/💡%20INSIGHTS-10B981?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🎯%20PERSONALIZED%20EXPERIENCE-EC4899?style=for-the-badge" />
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
 
 <br>
 
-<details>
-<summary>
-🧠 <b>Turn Data Into Intelligence</b>
-</summary>
+<div align="center">
 
-<br>
+<img src="https://img.shields.io/badge/💬%20CHAT-3B82F6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=for-the-badge" />
+<img src="https://img.shields.io/badge/📔%20JOURNAL-F59E0B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/📊%20PRODUCTIVITY-06B6D4?style=for-the-badge" />
+<img src="https://img.shields.io/badge/🧠%20AI-8B5CF6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/💡%20INSIGHTS-10B981?style=for-the-badge" />
 
-<img src="https://img.shields.io/badge/🧠%20INTELLIGENCE%20LAYER-8B5CF6?style=for-the-badge">
-
-<br><br>
-
-Neko AI combines different sources of interaction — conversations,
-mood, journaling, and activity — into a more intelligent personal
-experience.
-
-<br><br>
-
-<img src="https://img.shields.io/badge/👤%20USER%20INTERACTION-3B82F6?style=for-the-badge">
-
-⬇️
-
-<img src="https://img.shields.io/badge/📊%20DATA-06B6D4?style=for-the-badge">
-
-⬇️
-
-<img src="https://img.shields.io/badge/🧠%20ML%20ANALYSIS-8B5CF6?style=for-the-badge">
-
-⬇️
-
-<img src="https://img.shields.io/badge/💡%20INSIGHTS-10B981?style=for-the-badge">
-
-⬇️
-
-<img src="https://img.shields.io/badge/🎯%20PERSONALIZED%20EXPERIENCE-EC4899?style=for-the-badge">
-
-</details>
+</div>
 
 ---------------------------------------------------------------------------------------------------
 
