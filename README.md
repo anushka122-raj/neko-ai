@@ -15,17 +15,37 @@ Most AI assistants focus primarily on answering questions.
 
 **Neko AI focuses on the person behind the conversation.**
 
-The goal is to create an AI companion that can combine:
+## 🌟 What Makes Neko AI Different?
 
-* 💬 Natural conversations
-* 🧠 AI-powered personalization
-* 😊 Mood and emotion awareness
-* 📔 Personal journaling
-* 📊 Productivity insights
-* 🎯 Personalized recommendations
-* 🤖 Machine-learning-based analysis
-* 🖥️ Desktop experience
-* 📱 Mobile experience
+```mermaid
+mindmap
+  root((🐱 Neko AI))
+    💬 Natural Conversations
+      Context-aware interaction
+      Companion-style chat
+    🧠 AI Personalization
+      User preferences
+      Personalized experience
+    😊 Mood & Emotion
+      Mood tracking
+      Emotion awareness
+    📔 Personal Journal
+      Daily entries
+      Personal reflections
+    📊 Productivity
+      Activity analysis
+      Productivity insights
+    🎯 Recommendations
+      Personalized suggestions
+      Intelligent insights
+    🤖 Machine Learning
+      Data analysis
+      ML predictions
+    🖥️ Desktop
+      Electron application
+    📱 Mobile
+      Mobile experience
+```
 
 The project explores how AI can move from a simple **question → answer** system toward a more **context-aware personal companion**.
 
