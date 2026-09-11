@@ -187,33 +187,58 @@ The project also contains a mobile application component, allowing the Neko AI e
 
 **# 📁 Project Structure**
 
+<table>
+<tr>
+<th>📂 Directory</th>
+<th>🎯 Purpose</th>
+</tr>
 
-NekoAI/
-│
-├── backend/
-│   └── Backend services and APIs
-│
-├── frontend/
-│   └── React web application
-│
-├── mobile_app/
-│   └── Mobile application
-│
-├── electron/
-│   └── Desktop application
-│
-├── ml_model/
-│   └── Machine learning pipeline and models
-│
-├── dataset/
-│   └── Dataset and data-processing resources
-│
-├── docs/
-│   └── Project documentation
-│
-├── .gitignore
-└── README.md
+<tr>
+<td>🖥️ <b>backend/</b></td>
+<td>Backend services and APIs</td>
+</tr>
 
+<tr>
+<td>📊 <b>dataset/</b></td>
+<td>Datasets and data resources</td>
+</tr>
+
+<tr>
+<td>📚 <b>docs/</b></td>
+<td>Project documentation</td>
+</tr>
+
+<tr>
+<td>💻 <b>electron/</b></td>
+<td>Desktop application</td>
+</tr>
+
+<tr>
+<td>🎨 <b>frontend/</b></td>
+<td>React web application</td>
+</tr>
+
+<tr>
+<td>🧠 <b>ml_model/</b></td>
+<td>Machine learning pipeline and models</td>
+</tr>
+
+<tr>
+<td>📱 <b>mobile_app/</b></td>
+<td>Mobile application</td>
+</tr>
+
+<tr>
+<td>⚙️ <b>.gitignore</b></td>
+<td>Git ignored files and folders</td>
+</tr>
+
+<tr>
+<td>📖 <b>README.md</b></td>
+<td>Project documentation and overview</td>
+</tr>
+
+</table>
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
