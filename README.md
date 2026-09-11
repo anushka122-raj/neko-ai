@@ -23,14 +23,21 @@ and <b>daily experiences</b>.
 ---
 
 💜 **Meet Neko**
-
 > 🐾 **Neko isn't just here to answer questions.**  
 > Neko is designed to become part of your everyday digital life.
 
+<br>
+
 <details>
-<summary>💬 <b>Talk with Neko</b></summary>
+<summary>
+💬 <b>Talk with Neko</b>
+</summary>
 
 <br>
+
+<img src="https://img.shields.io/badge/💬%20CONVERSATION-3B82F6?style=for-the-badge">
+
+<br><br>
 
 Have natural conversations with your AI companion.
 
@@ -40,10 +47,18 @@ ongoing interaction experience.
 
 </details>
 
+<br>
+
 <details>
-<summary>😊 <b>Express Your Mood</b></summary>
+<summary>
+😊 <b>Express Your Mood</b>
+</summary>
 
 <br>
+
+<img src="https://img.shields.io/badge/😊%20MOOD%20AWARENESS-EC4899?style=for-the-badge">
+
+<br><br>
 
 Your day isn't just about productivity.
 
@@ -52,26 +67,46 @@ and reflect on their emotional state alongside their daily activities.
 
 </details>
 
+<br>
+
 <details>
-<summary>📔 <b>Write Your Day</b></summary>
+<summary>
+📔 <b>Write Your Day</b>
+</summary>
 
 <br>
 
+<img src="https://img.shields.io/badge/📔%20AI%20JOURNAL-F59E0B?style=for-the-badge">
+
+<br><br>
+
 Use the AI Journal to record:
 
-📝 **Thoughts**  
-😊 **Mood**  
-📅 **Daily experiences**  
-💭 **Personal reflections**
+<br>
+
+<img src="https://img.shields.io/badge/📝%20THOUGHTS-3B82F6?style=flat-square">
+<img src="https://img.shields.io/badge/😊%20MOOD-EC4899?style=flat-square">
+<img src="https://img.shields.io/badge/📅%20EXPERIENCES-F59E0B?style=flat-square">
+<img src="https://img.shields.io/badge/💭%20REFLECTIONS-8B5CF6?style=flat-square">
+
+<br><br>
 
 Your journal becomes a personal space for documenting everyday experiences.
 
 </details>
 
+<br>
+
 <details>
-<summary>📊 <b>Understand Your Productivity</b></summary>
+<summary>
+📊 <b>Understand Your Productivity</b>
+</summary>
 
 <br>
+
+<img src="https://img.shields.io/badge/📊%20PRODUCTIVITY%20INTELLIGENCE-06B6D4?style=for-the-badge">
+
+<br><br>
 
 Neko AI includes a machine-learning component designed to analyze
 productivity-related activity patterns.
@@ -79,20 +114,54 @@ productivity-related activity patterns.
 The ML pipeline processes activity data, extracts relevant features,
 and generates productivity-related predictions.
 
+<br><br>
+
+<img src="https://img.shields.io/badge/DATA-06B6D4?style=flat-square">
+➡️
+<img src="https://img.shields.io/badge/FEATURES-8B5CF6?style=flat-square">
+➡️
+<img src="https://img.shields.io/badge/ML%20MODEL-EC4899?style=flat-square">
+➡️
+<img src="https://img.shields.io/badge/PREDICTION-10B981?style=flat-square">
+
 </details>
 
+<br>
+
 <details>
-<summary>🧠 <b>Turn Data Into Intelligence</b></summary>
+<summary>
+🧠 <b>Turn Data Into Intelligence</b>
+</summary>
 
 <br>
+
+<img src="https://img.shields.io/badge/🧠%20INTELLIGENCE%20LAYER-8B5CF6?style=for-the-badge">
+
+<br><br>
 
 Neko AI combines different sources of interaction — conversations,
 mood, journaling, and activity — into a more intelligent personal
 experience.
 
-<br>
+<br><br>
 
-<b>👤 User Interaction → 📊 Data → 🧠 ML Analysis → 💡 Insights → 🎯 Personalized Experience</b>
+<img src="https://img.shields.io/badge/👤%20USER%20INTERACTION-3B82F6?style=for-the-badge">
+
+⬇️
+
+<img src="https://img.shields.io/badge/📊%20DATA-06B6D4?style=for-the-badge">
+
+⬇️
+
+<img src="https://img.shields.io/badge/🧠%20ML%20ANALYSIS-8B5CF6?style=for-the-badge">
+
+⬇️
+
+<img src="https://img.shields.io/badge/💡%20INSIGHTS-10B981?style=for-the-badge">
+
+⬇️
+
+<img src="https://img.shields.io/badge/🎯%20PERSONALIZED%20EXPERIENCE-EC4899?style=for-the-badge">
 
 </details>
 
