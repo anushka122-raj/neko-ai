@@ -166,11 +166,33 @@ The long-term goal is to use these entries to provide meaningful personalized in
 ----------------------------------------------------------------------------------------------------
 **📊 Productivity Intelligence**
 
-Neko AI includes a machine-learning component designed to analyze productivity-related patterns.
+Neko AI includes a machine-learning component designed to analyze
+productivity-related patterns in user activity.
 
-The ML pipeline can be used to identify patterns in user activity and generate productivity-related insights.
+**🔄 Productivity Analysis Pipeline**
 
-This makes the application more than a traditional chatbot — it introduces a **data-driven intelligence layer**.
+```mermaid
+flowchart LR
+
+    A["👤<br/><b>User Activity</b><br/>Daily Behavior"]
+    B["📊<br/><b>Activity Data</b><br/>Collected Patterns"]
+    C["⚙️<br/><b>Data Processing</b><br/>Prepare Features"]
+    D["🧠<br/><b>ML Analysis</b><br/>Pattern Detection"]
+    E["📈<br/><b>Productivity Patterns</b><br/>Identify Trends"]
+    F["💡<br/><b>Productivity Insights</b><br/>Data-Driven Intelligence"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    style A fill:#3B82F6,color:#FFFFFF,stroke:#1D4ED8
+    style B fill:#06B6D4,color:#FFFFFF,stroke:#0E7490
+    style C fill:#8B5CF6,color:#FFFFFF,stroke:#6D28D9
+    style D fill:#EC4899,color:#FFFFFF,stroke:#BE185D
+    style E fill:#F59E0B,color:#FFFFFF,stroke:#D97706
+    style F fill:#10B981,color:#FFFFFF,stroke:#047857
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
