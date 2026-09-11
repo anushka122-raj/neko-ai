@@ -858,55 +858,73 @@ The project also contains a mobile application component, allowing the Neko AI e
 
 **📁 Project Structure**
 
-<table>
+<table align="center">
 <tr>
-<th>📂 Directory</th>
-<th>🎯 Purpose</th>
+<th>📂 DIRECTORY</th>
+<th>🎯 PURPOSE</th>
 </tr>
 
 <tr>
-<td>🖥️ <b>backend/</b></td>
-<td>Backend services and APIs</td>
+<td>
+<img src="https://img.shields.io/badge/🖥️%20backend-3B82F6?style=for-the-badge">
+</td>
+<td><b>Backend services & APIs</b></td>
 </tr>
 
 <tr>
-<td>📊 <b>dataset/</b></td>
-<td>Datasets and data resources</td>
+<td>
+<img src="https://img.shields.io/badge/📊%20dataset-06B6D4?style=for-the-badge">
+</td>
+<td><b>Datasets & data resources</b></td>
 </tr>
 
 <tr>
-<td>📚 <b>docs/</b></td>
-<td>Project documentation</td>
+<td>
+<img src="https://img.shields.io/badge/📚%20docs-8B5CF6?style=for-the-badge">
+</td>
+<td><b>Project documentation</b></td>
 </tr>
 
 <tr>
-<td>💻 <b>electron/</b></td>
-<td>Desktop application</td>
+<td>
+<img src="https://img.shields.io/badge/💻%20electron-6366F1?style=for-the-badge">
+</td>
+<td><b>Desktop application</b></td>
 </tr>
 
 <tr>
-<td>🎨 <b>frontend/</b></td>
-<td>React web application</td>
+<td>
+<img src="https://img.shields.io/badge/🎨%20frontend-EC4899?style=for-the-badge">
+</td>
+<td><b>React web application</b></td>
 </tr>
 
 <tr>
-<td>🧠 <b>ml_model/</b></td>
-<td>Machine learning pipeline and models</td>
+<td>
+<img src="https://img.shields.io/badge/🧠%20ml__model-F59E0B?style=for-the-badge">
+</td>
+<td><b>Machine learning pipeline & models</b></td>
 </tr>
 
 <tr>
-<td>📱 <b>mobile_app/</b></td>
-<td>Mobile application</td>
+<td>
+<img src="https://img.shields.io/badge/📱%20mobile__app-10B981?style=for-the-badge">
+</td>
+<td><b>Mobile application</b></td>
 </tr>
 
 <tr>
-<td>⚙️ <b>.gitignore</b></td>
-<td>Git ignored files and folders</td>
+<td>
+<img src="https://img.shields.io/badge/⚙️%20.gitignore-64748B?style=for-the-badge">
+</td>
+<td><b>Git ignored files & folders</b></td>
 </tr>
 
 <tr>
-<td>📖 <b>README.md</b></td>
-<td>Project documentation and overview</td>
+<td>
+<img src="https://img.shields.io/badge/📖%20README.md-DC2626?style=for-the-badge">
+</td>
+<td><b>Project documentation & overview</b></td>
 </tr>
 
 </table>
