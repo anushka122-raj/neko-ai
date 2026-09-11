@@ -1,4 +1,3 @@
-**🐱 Neko AI — Your Intelligent AI Companion**
 
 <div align="center">
 
@@ -103,7 +102,7 @@ experience.
 
 <div align="center">
 
-<h3>💜 What Makes Neko Different? 🐱</h3>
+<h3>🌈 What Makes Neko Different? 🐱</h3>
 
 <table>
 <tr>
@@ -112,45 +111,71 @@ experience.
 </tr>
 
 <tr>
-<td>💬 Mainly conversation</td>
-<td>💬 <b>Conversation + Personal Interaction</b></td>
+<td>
+<img src="https://img.shields.io/badge/Conversation-6B7280?style=for-the-badge&logo=chatbot&logoColor=white">
+</td>
+<td>
+<img src="https://img.shields.io/badge/Conversation%20%2B%20Personal%20Interaction-8B5CF6?style=for-the-badge">
+</td>
 </tr>
 
 <tr>
-<td>🧠 Limited personal context</td>
-<td>🧠 <b>User Activity & Interaction Context</b></td>
+<td>
+<img src="https://img.shields.io/badge/Limited%20Context-6B7280?style=for-the-badge">
+</td>
+<td>
+<img src="https://img.shields.io/badge/User%20Context-6366F1?style=for-the-badge">
+</td>
 </tr>
 
 <tr>
-<td>📄 Separate journaling tools</td>
-<td>📔 <b>Integrated AI Journal</b></td>
+<td>
+<img src="https://img.shields.io/badge/Separate%20Tools-6B7280?style=for-the-badge">
+</td>
+<td>
+<img src="https://img.shields.io/badge/AI%20Journal-EC4899?style=for-the-badge">
+</td>
 </tr>
 
 <tr>
-<td>🙂 Basic conversational experience</td>
-<td>😊 <b>Mood-Aware Interaction</b></td>
+<td>
+<img src="https://img.shields.io/badge/Basic%20Interaction-6B7280?style=for-the-badge">
+</td>
+<td>
+<img src="https://img.shields.io/badge/Mood%20Aware-EC4899?style=for-the-badge">
+</td>
 </tr>
 
 <tr>
-<td>📊 Limited productivity analysis</td>
-<td>📈 <b>ML-Based Productivity Intelligence</b></td>
+<td>
+<img src="https://img.shields.io/badge/Limited%20Analysis-6B7280?style=for-the-badge">
+</td>
+<td>
+<img src="https://img.shields.io/badge/ML%20Productivity-10B981?style=for-the-badge">
+</td>
 </tr>
 
 <tr>
-<td>🖥️ Often focused on one platform</td>
-<td>💻 <b>Multi-Platform Experience</b></td>
+<td>
+<img src="https://img.shields.io/badge/Single%20Platform-6B7280?style=for-the-badge">
+</td>
+<td>
+<img src="https://img.shields.io/badge/Multi--Platform-06B6D4?style=for-the-badge">
+</td>
 </tr>
 
 <tr>
-<td>🔄 Reactive responses</td>
-<td>🎯 <b>Personalized AI Experience</b></td>
+<td>
+<img src="https://img.shields.io/badge/Reactive-6B7280?style=for-the-badge">
+</td>
+<td>
+<img src="https://img.shields.io/badge/Personalized%20AI-8B5CF6?style=for-the-badge">
+</td>
 </tr>
 
 </table>
 
 </div>
-
----
 
 🌈 **The Neko Experience**
 
