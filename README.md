@@ -507,7 +507,8 @@ to the Neko experience.
 
 </div>
 ---------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------- **🏗️ System Architecture**
+--------------------------------------------------------------------------------------------------
+🏗️ System Architecture
 
 Neko AI follows a modular architecture separating the user interface, backend services, machine-learning components, and platform-specific applications.
 
@@ -690,25 +691,43 @@ productivity-related patterns in user activity.
 ----------------------------------------------------------------------------------------------------
 **🧠 Machine Learning Pipeline**
 
-The ML component follows a standard machine-learning workflow:
+<div align="center">
 
-Raw Dataset
-     ↓
-Data Cleaning
-     ↓
-Feature Engineering
-     ↓
-Train / Test Split
-     ↓
-Model Training
-     ↓
-Model Evaluation
-     ↓
-Model Serialization
-     ↓
-Backend Integration
-     ↓
-Prediction
+<img src="https://img.shields.io/badge/📂%20RAW%20DATASET-3B82F6?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🧹%20DATA%20CLEANING-06B6D4?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🧩%20FEATURE%20ENGINEERING-8B5CF6?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/✂️%20TRAIN%20%2F%20TEST%20SPLIT-F59E0B?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🧠%20MODEL%20TRAINING-EC4899?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/📊%20MODEL%20EVALUATION-6366F1?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/💾%20MODEL%20SERIALIZATION-14B8A6?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🔗%20BACKEND%20INTEGRATION-10B981?style=for-the-badge" />
+
+⬇️
+
+<img src="https://img.shields.io/badge/🔮%20PREDICTION-7C3AED?style=for-the-badge" />
+
+</div>
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
