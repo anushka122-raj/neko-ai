@@ -196,25 +196,30 @@ flowchart LR
 
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-
-**🧠 Machine Learning**
-
-Neko AI includes a dedicated machine learning component for
-experimentation, model training, and prediction.
-
-**🔄 Machine Learning Pipeline**
-
+**🧠 Machine Learning Pipeline**
 ```mermaid
-flowchart LR
-    A[User Data] --> B[Data Processing]
+flowchart TD
+    A[Raw Dataset] --> B[Data Cleaning]
     B --> C[Feature Engineering]
-    C --> D[ML Model]
-    D --> E[Prediction]
-    E --> F[Neko AI Insights]
+    C --> D[Train Test Split]
+    D --> E[Model Training]
+    E --> F[Model Evaluation]
+    F --> G[Model Serialization]
+    G --> H[Backend Integration]
+    H --> I[Prediction]
+
+    style A fill:#3B82F6,color:#FFFFFF
+    style B fill:#8B5CF6,color:#FFFFFF
+    style C fill:#F59E0B,color:#FFFFFF
+    style D fill:#06B6D4,color:#FFFFFF
+    style E fill:#EC4899,color:#FFFFFF
+    style F fill:#10B981,color:#FFFFFF
+    style G fill:#6366F1,color:#FFFFFF
+    style H fill:#F97316,color:#FFFFFF
+    style I fill:#14B8A6,color:#FFFFFF
 ```
 
-The repository includes trained-model infrastructure and datasets used for ML experimentation.
-
+The ML component follows a standard machine-learning workflow:
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
@@ -347,44 +352,6 @@ The project also contains a mobile application component, allowing the Neko AI e
 ---------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-**🧠 Machine Learning Pipeline**
-
-## 🧠 Machine Learning Workflow
-
-The ML component follows a structured machine-learning pipeline:
-
-```mermaid
-flowchart TD
-
-    A["📊 Raw Dataset"]
-    B["🧹 Data Cleaning"]
-    C["⚙️ Feature Engineering"]
-    D["✂️ Train / Test Split"]
-    E["🧠 Model Training"]
-    F["📈 Model Evaluation"]
-    G["💾 Model Serialization"]
-    H["🔗 Backend Integration"]
-    I["🎯 Prediction"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-
-    style A fill:#6366F1,color:#FFFFFF
-    style B fill:#14B8A6,color:#FFFFFF
-    style C fill:#06B6D4,color:#FFFFFF
-    style D fill:#3B82F6,color:#FFFFFF
-    style E fill:#8B5CF6,color:#FFFFFF
-    style F fill:#F59E0B,color:#FFFFFF
-    style G fill:#64748B,color:#FFFFFF
-    style H fill:#10B981,color:#FFFFFF
-    style I fill:#EC4899,color:#FFFFFF
-```
 
 
 This separation allows the machine-learning component to evolve independently from the main application.
